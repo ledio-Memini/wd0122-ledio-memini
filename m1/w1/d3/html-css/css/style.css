@@ -1,0 +1,28 @@
+
+/*general styles */
+
+/* h1 */
+
+h1{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Palette Mosaic', cursive;
+    font-style: italic;
+}
+
+
+/* header */
+
+header{
+    background-color:red;
+}
+
+#articolo{
+
+        background-color:blue;
+}
+
+img{
+
+    max-width: 100%;
+}
