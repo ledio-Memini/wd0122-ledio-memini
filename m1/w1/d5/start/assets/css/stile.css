@@ -1,0 +1,115 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    color: #393d41;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.65;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    text-align: center;
+}
+/* MAIN  */
+main{
+    text-align: center;
+}
+main #sezione{
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    height:340px ;
+    background-repeat: no-repeat;
+}
+h1{
+    color:#25a2c3;
+    line-height: 1.5;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+}
+h2{
+    padding-bottom: 30px;
+}
+
+main a{
+    background-color: #f04c2f;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+
+}
+h3{
+    color: #25a2c3;
+}
+#sezione2{
+    padding: 30px 0;
+}
+#sezione2 div{
+    padding: 10px 40px;
+}
+#sezione2 img{
+    border-radius: 100%;
+    padding: 20px 0;
+}
+#sezione3{
+    background-color:#e22d0e;
+    color: #fff;
+}
+#sezione3 h3{
+    color: #fff;
+    font-size: 40px;
+}
+#sezione3 p{
+    padding: 15px 0px;
+    font-size: small;
+    font-style: oblique;
+}
+#mario-rossi{
+    color:white;
+}
+/*ASIDE*/
+
+aside{
+    margin: 40px;
+}
+aside div{
+    margin: 30px;
+    border-style:solid;
+    border-color:#dee1e3;
+    border-width:1px;
+    padding-bottom: 30px;
+}
+aside img{
+    width: 100%;
+    height: auto;
+}
+h4{
+    color: #25a2c3;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #25a2c3;
+    color: #c8e7f0;
+    text-align: center;
+    padding: 50px;
+}
+i{
+    color: white;
+}
+footer a{
+    color: #c8e7f0;
+}
+#contattaci{
+    color: #fff;
+    font-size: 50px;
+}
+footer hr{
+    width: 50%;
+}
