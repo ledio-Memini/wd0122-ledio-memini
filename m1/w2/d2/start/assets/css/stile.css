@@ -109,6 +109,22 @@ section h2 {
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
+
+
+#primaimmagine{
+    border: 5px solid #a02571;
+    float: left;
+}
+
+.primaimmagine{
+    float: left;
+    display: inline-block;
+    clear: both;
+    padding: 5px;
+    border: 5px solid #00A0C6;
+
+}
+
 h1 {
     font-size: 2.6rem;
     font-weight: bold;
