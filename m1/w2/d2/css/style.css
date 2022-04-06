@@ -4,25 +4,23 @@
     background-color: red;
 }
 
-.float-section.blocco{
+.float-section .blocco{
     float: left;
-    
 }
 .clearfix{
     clear: both;
     visibility: hidden;
 }
+
 .inline-block-section{
     text-align: right;
 }
-
 .inline-block-section .blocco{
     display: inline-block;
-
 }
 
 .float-left-img{
     float: left;
-    padding: 15px;
-
+    padding-right:15px;
+    padding-bottom:15px;
 }
