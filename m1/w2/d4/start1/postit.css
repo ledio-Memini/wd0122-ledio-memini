@@ -1,0 +1,57 @@
+.container{
+    background-color: rgb(88, 85, 85);
+    width: 500px;
+    height: 280px;
+    display: flex;
+    gap: 5px;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:30px;
+}
+
+.blocco{
+    width: 100px;
+    height: 100px; 
+    text-align: center;
+    box-shadow: 3px 3px 5px rgb(56, 54, 54);
+    transition: all 0.3s;
+}
+
+.postgialli{
+    background:linear-gradient(yellow,rgb(153, 149, 149));
+    transform:rotate(-5deg);
+}
+
+.postverdi{
+    background:linear-gradient(rgb(142, 235, 142),rgb(153, 149, 149));
+    transform:rotate(5deg);
+}
+
+.postviola{
+    background:linear-gradient(rgb(187, 124, 187),rgb(153, 149, 149));
+}
+
+.postgialli:hover{
+    width: 150px;
+    height: 150px;
+    transform: rotate(1deg);
+}
+
+.postverdi:hover{
+    width: 150px;
+    height: 150px;
+    transform: rotate(-1deg);
+}
+
+.postviola:hover{
+    width: 150px;
+    height: 150px;
+}

@@ -8,26 +8,29 @@ body {
     background-image: url('../img/sfondo.png');
     background-position: center center;
 }
-main{
-    display: grid;
-    grid-template-areas: 
-    'article section'
-    'article aside'
-    ;
-}
-
-#n1{
-    grid-area: article;
-}
-#n2{
-    grid-area: aside;
-}
-#n3{
-    grid-area: section;
-}
-section{
-    position: sticky;
-    top: 0px;
+@media screen and (min-width:800px) {
+    main { 
+        display: grid;
+        grid-template-areas: 
+          "post correlati"
+          "post newsletter";
+        grid-template-rows: auto 1fr;  
+        grid-template-columns: 60% 1fr;
+        grid-row-gap: 2%;
+        grid-column-gap: 2%;
+        }  
+      article { 
+        grid-area: post;      
+        }
+      section { 
+        grid-area: newsletter; 
+        align-self: start;
+        position: sticky;
+        top: 350px;
+        }
+      aside { 
+        grid-area: correlati; 
+        } 
 }
 
     @media screen and (min-width:500px) {
