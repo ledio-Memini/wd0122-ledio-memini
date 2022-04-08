@@ -1,0 +1,260 @@
+/* IMPOSTAZIONI GENERALI */
+body{
+    color:#000;
+    font-size:1.5rem;
+    line-height: 1.8;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    font-size:4rem;
+    color: white;
+}
+h2{
+    font-size:3.5rem;
+}
+a i{
+    color: #e42424;
+}
+button{
+    font-size:1.9rem;
+    color:white;
+    border:none;
+    padding:10px;
+    background: rgb(2,0,36);
+background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(9,9,121,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#090979",GradientType=1);
+}
+
+header{
+    background-color:white;
+}
+
+
+/* HEADER */
+nav{
+    background-color:white;
+    box-shadow:1px 1px 20px #d3d3d3;
+    display: flex;
+    position:sticky;
+    top:0;
+    justify-content:space-between;
+    padding:15px;
+}
+nav div{
+    flex-direction: column;
+}
+
+li{
+    display: inline;
+    flex-wrap: nowrap;
+    
+}
+li a{
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+}
+
+
+section{
+    padding:15px;
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+}
+/* MAIN */
+main{
+    text-align:center;
+}
+h3{
+    font-weight: bold;
+    font-size: 2rem;
+}
+main div{
+    padding:15px ;
+}
+main div .lni{
+    color: red;
+    font-size: 2.5rem;
+}
+
+#blue{
+    background-color:#0c0633;
+    color: white;
+    padding:100px 10px;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: rgb(238,238,238);
+    padding:30px;
+}
+h4{
+    font-weight: bold;
+}
+
+footer .lni{
+    color: red;
+    padding-bottom: 40px;
+    font-size: 2rem;
+}
+
+footer input{
+    width: 400px;
+    height: 40px;
+}
+footer button{
+    width: 408px;
+    height: 50px;
+}
+
+
+
+
+
+/*CHI SIAMO*/
+
+.computer{
+    width: 100%;
+}
+
+tr:nth-last-of-type(1){
+    background-color: rgb(137, 211, 240);
+}
+tr:nth-last-of-type(2){
+    background-color: rgb(137, 211, 240);
+}
+tr:nth-last-of-type(3){
+    background-color: rgb(137, 211, 240);
+}
+tr:nth-last-of-type(7){
+    background-color: rgb(137, 211, 240);
+}
+tr:nth-last-of-type(8){
+    background-color: rgb(137, 211, 240);
+}
+tr:nth-last-of-type(9){
+    background-color: rgb(137, 211, 240);
+}
+table tr{
+    text-align:justify;
+}
+table {
+    margin: 20px;
+}
+
+tr{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+
+#table2{
+    display:none;
+    
+}
+
+.testo{
+    height:30px;
+    width: 235px;
+}
+
+
+@media screen and (max-width:768px){
+    #menu2:checked + ul{
+        height: 200px;
+    }
+    #menu{
+        height: 0;
+        overflow: hidden;
+    }
+    #home .lni-more{
+        font-size: 4rem;
+        color: red;
+        position:absolute;
+        right: 0;
+        top: -5%;
+    }
+    #menu{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#menu2{
+    display: none;
+}
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (min-width:768px){
+    section{
+        padding:100px;
+    }
+    .container{
+        display: flex;
+    }
+    label .lni-more{
+        display:none;
+    }
+    #home1{
+        display:flex;
+        justify-content:center;
+    }
+    .footer{
+        display:flex;
+        flex-direction: row;
+}
+
+@media screen and (min-width:768px){
+    img{
+        width: 100%;
+    }
+    #dueimmagini{
+        display:flex;   
+    }
+    #table1{
+        display: none;
+    }
+    #table2{
+        display:block;   
+    }
+
+}
+
+@media screen and (min-width:768px){
+    #contatti1{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width:768px){
+    #c4{
+        animation-name: pulsa;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        box-shadow: 0px 0px 15px black, 0px 0px 15px black;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    @keyframes pulsa{
+        0%{ box-shadow: 0px 0px 15px black, 0px 0px 15px black;}
+        50%{ box-shadow: 0px 0px 1px black, 0px 0px 1px black;}
+        100%{ box-shadow: 0px 0px 15px black, 0px 0px 15px black;}
+    
+    
+    }
+}
