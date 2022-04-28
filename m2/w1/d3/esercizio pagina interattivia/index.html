@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina interattiva</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+    <div class="tendina">
+        <button class="drop" onclick="menu()">Apri</button>
+        <div id="tenda" class="tenda1">
+        <a href="">Home</a>
+        <a href="">Chi sono</a>
+        <a href="">Contatti</a>
+        </div>
+    </div>
+    <div>
+        <h1 id="titolo">Pagina Interattiva</h1>
+    </div>
+    <input type="button" value="grande" onclick="getElementById('titolo').style.fontSize = '100px'">
+    <input type="button" value="colore" onclick="getElementById('titolo').style.color = 'red'">
+    <input type="button" value="maiuscolo" onclick="getElementById('titolo').style.textTransform = 'uppercase'">
+    <input type="button" value="nascondi" onclick="getElementById('titolo').style.visibility = 'hidden'">
+    <input type="button" value="mostra" onclick="getElementById('titolo').style.visibility = 'visible'">
+
+    <div class="lista">
+        <h2>LISTA DEGLI IMPEGNI GIORNALIERI</h2>
+        <ul>
+            <li>Lavare la macchina</li>
+            <li>Andare dal dentista</li>
+            <li>Palestra</li>
+            <li>Spesa</li>
+        </ul>
+    </div>
+
+    
+    <script src="js/sciprt.js"></script>
+
+</body>
+</html>

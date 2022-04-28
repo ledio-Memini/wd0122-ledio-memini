@@ -1,0 +1,68 @@
+body{
+    height: 1000px;
+    background:linear-gradient(green,aqua);
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+}
+
+h2{
+    font-weight: bold;
+}
+li{
+    width: 200px;
+}
+.rosso{
+    color: red;
+    cursor: pointer;
+}
+
+.lineacancella{
+    text-decoration:line-through;
+    opacity:0.5;
+}
+
+.drop {
+    background-color: #1c15e7;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.drop:hover{
+    background-color: #37a0f0;
+}
+
+.tendina {
+    position: relative;
+    display: inline-block;
+}
+
+.tenda1{
+    display: none;
+    position: absolute;
+    background-color: #907cf5;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.tenda1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.tendina a:hover {
+    background-color: #caccd1
+}
+
+.mostra {
+    display: block;
+}
