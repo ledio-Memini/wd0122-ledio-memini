@@ -1,0 +1,8 @@
+.btn-primary{
+    background-color: aqua;
+    border-color:black;
+    color: black;
+}
+.container.container-con-bordo{
+    border: 1px solid black;
+}
