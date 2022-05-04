@@ -1,0 +1,18 @@
+.primo{
+    background-color: rgb(16, 73, 230);
+    padding:20px 10px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    &:hover{
+        background-color: rgb(3, 3, 66);
+    }
+}
+.secondo{
+    background-color: rgb(206, 121, 10);
+    padding:20px 10px;
+    font-size:1.5rem;
+    border-radius: 10px;
+    &:hover{
+        background-color:rgb(253, 85, 7)
+    }
+}

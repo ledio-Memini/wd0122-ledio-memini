@@ -1,0 +1,46 @@
+@import 'button';
+@import 'variabili';
+
+
+
+body{
+    background-color:$viola
+}
+header{
+    margin: 0px 40px;
+    margin-left: 100px;
+}
+
+nav{
+    display:flex;
+    position: relative;
+}
+
+ul{
+    display:flex;
+    position:absolute;
+    top:60px;
+    left:70%;
+    list-style-type: none;
+}
+li{
+    margin:0px 30px 30px 30px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.showcase-content{
+    display:flex;
+    margin-top:30px;
+}
+h1{
+    font-size:4rem;
+}
+
+.showcase-content div{
+    padding:10px;
+}
+img{
+    margin-left: 190px;
+}
