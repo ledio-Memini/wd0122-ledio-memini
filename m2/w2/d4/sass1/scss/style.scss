@@ -1,0 +1,84 @@
+@import 'functions';
+
+@mixin testi($peso, $bg){
+    margin-top: 10px;
+    color: #808080;
+    padding: 15px;
+    font-weight: #{$peso};
+    background-color: #{$bg};
+}
+
+@mixin colore($modifica, $valore){
+    #{$modifica}color: $valore
+}
+
+h1{
+    font-size:1.5rem;
+    @include testi(bold,red);
+    @media screen and(min-width:768px){
+        font-size:2rem;
+    }
+    &:hover{
+        background-color: rgb(88, 3, 3);
+        color: set-color-pro(red,#808080)
+    }
+    &:after{
+        content: ">";
+
+    }
+}
+p{
+    font-size:1rem;
+    @include testi(400,green);
+
+}
+
+#p1{
+    @include colore('',red);
+    height: calc(200px / 2);
+}
+#p2{
+    @include colore('background-',red);
+    color:#fff;
+    width: miafunzione(3)
+}
+$sfondo : rgb(248, 151, 200);
+#d1{
+    background-color: $sfondo;
+    color:set-color-pro($sfondo,$sfondo);
+}
+
+.main_div{
+    margin: 5px;
+    border-top: 1px solid #ccc;
+    width: 250px;
+}
+
+.special_div{
+    @extend .main_div;
+    height:250px;
+    margin-left:auto;
+}
+
+/*cicli*/
+
+@for $i from 1 to 4{
+    .bordo#{$i}{
+        border-top: 3px * $i solid black;
+    }
+}
+$misure: 15px, 30px, 45px;
+
+@each $misura in $misure{
+    .ml-#{$misura}{
+        margin-left: $misura;
+    }
+    .mt-#{$misura}{
+        margin-top: $misura;
+    }
+
+}
+
+
+
+

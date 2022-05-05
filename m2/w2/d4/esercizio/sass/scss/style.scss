@@ -1,0 +1,31 @@
+@import 'about';
+@import 'contatti';
+@import 'index';
+@import 'portfolio';
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#main-menu ul{
+    display: flex;
+    background-color:rgb(4, 4, 95);
+    border-radius: 15px; 
+    border: 1px ridge white;
+    box-shadow: 1px 1px 5px black;
+    list-style-type: none;
+}
+
+#main-menu li{
+    padding: 15px;
+}
+#main-menu a{
+    font-size:1.5rem;
+    color:white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+#footer{
+    width:100%;
+    height:100px;
+    background-color:rgb(8, 134, 184);
+}

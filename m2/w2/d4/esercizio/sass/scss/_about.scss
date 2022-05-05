@@ -1,0 +1,23 @@
+#main{
+    display:flex;
+    margin: 0 10%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+}
+#content{
+    flex-basis: 75%;
+}
+#sidebar{
+    flex-basis: 25%;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        font-size:1.5rem;
+        padding: 10px;
+        border-bottom: 1px dashed grey ;
+        width: 150px;
+    }
+}
+
