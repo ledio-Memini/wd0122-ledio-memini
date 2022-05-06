@@ -1,0 +1,90 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "function";
+@import "variables";
+
+.navbar{
+    font-size:20px;
+}
+
+i{
+    color:rgb(84, 11, 202);
+    &:hover{
+        color:white;
+    }
+}
+
+#first-cta{
+    background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+    background-repeat: no-repeat;
+    height:700px;
+    background-position-y: -250px ;
+    h1{
+        padding:15px;
+    }
+}
+
+#services{
+    color: set-color-txt(white);
+    i{
+        font-size:3rem;
+        margin-left: 45%;
+    }
+}
+
+.reviews{
+    position: relative;
+    padding: 0;
+
+    &-card{
+        background-color: rgba(white,1);
+        border-radius: 0.55rem;
+        padding: 3rem 1.3rem;
+        margin: 0 auto;
+        width: 75%;
+        height: auto;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    i{
+        font-size: 2rem;
+    }
+    .lh-lg{
+        font-size:2rem;
+    }
+
+    &-img{
+        width: 5rem;
+        height: 5rem;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &-name{
+        margin-bottom: 2rem;
+        padding-top: 4rem;
+        text-align: center;
+    }
+}
+
+
+h4{
+    font-weight: bold;
+    background-color: yellow;
+    border-radius: 15px 15px 0 0 ;
+    color:rgb(112, 4, 4);
+    border-bottom:2px solid rgb(109, 3, 3);
+    &:hover{
+        background-color: rgb(247, 191, 8);
+    }
+    
+}
+
+
+section.services{
+    margin:120px auto;
+}
+section.partnerships{
+    margin:120px auto;
+}
