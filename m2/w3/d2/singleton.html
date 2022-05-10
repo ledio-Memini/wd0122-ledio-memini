@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let singleton = (function (){//funzione anonima 
+            let i = 0;
+            return{
+                incrementa:() => {
+                    console.log(i)
+                    i++
+                    i = i + 10
+                },
+                decrementa:() => {
+                    console.log(i)
+                    return i--
+                },
+                reset: () => {
+                    console.log(i)
+                    i = 0;
+                    return i;
+                }
+            }
+        })()//le parentesi () eseguono la funzione anonima
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.incrementa()
+        singleton.decrementa()
+        singleton.decrementa()
+        singleton.reset()
+        console.log(singleton);
+
+    </script>
+    
+</body>
+</html>

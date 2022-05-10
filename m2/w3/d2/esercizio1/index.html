@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+            function Persona(nome, eta) {
+                this.nome = nome;
+                this.eta = eta;
+            }
+
+            let p1 = new Persona('Mario',25)
+            let p2 = new Persona('Gennaro',35)
+            let p3 = new Persona('Ciro',45)
+
+            let nome1 = p1.nome
+            let nome2 = p2.nome
+            let nome3 = p3.nome
+            
+            
+            if(p1.eta > p2.eta){
+                console.log(nome1 + " e piu grande di " + nome2)
+            }else{
+                console.log(nome2 + " e piu grande di " + nome1)
+            }
+
+            if(p1.eta > p3.eta){
+                console.log(nome1 + " e piu grande di " + nome3)
+            }else{
+                console.log(nome3 + " e piu grande di " + nome1)
+            }
+
+            if(p2.eta > p3.eta){
+                console.log(nome2 + " e piu grande di " + nome3)
+            }else{
+                console.log(nome3 + " e piu grande di " + nome2)
+            }
+
+    </script>
+
+</body>
+</html>

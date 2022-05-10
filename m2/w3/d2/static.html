@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        class Pizza {
+
+            
+            tipo = 'Napoletana'
+            static farina = '00'
+            constructor(gusto,prezzo){
+                this.gusto = gusto;
+                this.prezzo = prezzo;
+            }
+        }
+
+        let margherita = new Pizza('margherita',4)
+        console.log(margherita);
+        console.log(margherita.gusto);
+        console.log(margherita.farina);//farina non viene visualizzata perche e static quindi si visualizza con il metodo sottostante
+        console.log(Pizza.farina);
+
+    </script>
+
+
+</body>
+</html>
