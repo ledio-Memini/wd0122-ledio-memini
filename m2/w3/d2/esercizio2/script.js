@@ -4,9 +4,12 @@ let slider = document.querySelector('.container1');
 
 
 prec.addEventListener('click', function(){
-    slider.transform = "translate-y(`+200 + px`)"
+    let translate = document.querySelector('.translate')
+    slider = translate
 })
 
+
 succ.addEventListener('click', function(){
-    slider.transform = 'translate-y( -200px)'
+    let translate1 = document.querySelector('.translate1')
+    slider = translate1
 })
