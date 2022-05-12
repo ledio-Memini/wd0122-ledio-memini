@@ -44,3 +44,14 @@ bottone4.addEventListener('click',function(e){
 
 
 titolo.innerHTML = "ciao sono " + localStorage.getItem("nome")
+
+var timer = document.querySelector("#timer")
+let i = setInterval(function(){
+
+    i++
+    sessionStorage.setItem("tempo",i)
+    timer.innerHTML = sessionStorage.getItem("tempo")
+
+    localStorage.setItem("tempo",i)
+    
+},1000)
