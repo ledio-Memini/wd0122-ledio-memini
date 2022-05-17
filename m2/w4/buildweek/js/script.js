@@ -61,8 +61,8 @@ fetch("http://jsonplaceholder.typicode.com/users")
 
             vediUtente.classList.toggle('visibile')
             nomeV.innerHTML = utente.name
-            azienda.innerHTML = utente.company.name
-            indirizzo.innerHTML = utente.Address.street
+            document.getElementById("azienda").innerHTML = JSON.stringify(utente.company.name);
+            document.getElementById("indirizzo").innerHTML = JSON.stringify(utente.address.street +' '+ utente.address.suite + ' ' + utente.address.city);
             telefono.innerHTML = utente.phone
 
         })
