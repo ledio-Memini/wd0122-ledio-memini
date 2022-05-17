@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container" id="contenitore">
+       <div class="row">
+           <div class="col-8">
+
+               <table class="table mt-3">
+               <thead id="thead">
+                   <tr>
+                       <th scope="col">Id</th>
+                       <th scope="col">Nome</th>
+                       <th scope="col">Username</th>
+                       <th scope="col">Email</th>
+                       <div class="row">
+
+                           <th id="aggiungi" scope="col" class="col-12 btn bg-success text-white mb-2 ">Add New</th>
+                       </div>
+                    </tr>
+                </thead>
+                <tbody id="utenti">
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+        <div  class="col-4 mt-5 aggiungiUtente displayUser">
+            <h1>Crea nuovo utente</h1>
+            <form class="d-flex  flex-column wrap gap-2" action="POST">
+                <h3>nome</h3>
+                <input class="col-4" id="name" type="text"placeholder="inserisci nome">
+                <h3>username</h3>
+                <input class="col-4" id="userName" type="text"placeholder="inserisci username">
+                <h3>mail</h3>
+                <input class="col-4" id="mail" type="email"placeholder="inserisci email">
+                <button id="invia" class="btn btn-success col-2">invia</button>
+            </form>
+        </div>
+        <div  class="col-4 mt-5 displayUser modificaUtente">
+            <h1>modifica utente</h1>
+            <form class="d-flex  flex-column wrap gap-2" action="POST">
+                <h3>modifica nome</h3>
+                <input class="col-4" id="name1" type="text"placeholder="inserisci nome">
+                <h3>modifica username</h3>
+                <input class="col-4" id="userName1" type="text"placeholder="inserisci username">
+                <h3>modifica mail</h3>
+                <input class="col-4" id="mail1" type="email"placeholder="inserisci email">
+                <button id="invia1" class="btn btn-warning col-3">modifica</button>
+                <input type="text" id="inputId" class="col">
+            </form>
+        </div>
+
+        <div  class="col-4 mt-5 displayUser vediUtente">
+            <h1>vedi utente</h1>
+            
+                <h3>nome: <span id="nomeV"> </span></h3>
+                
+                
+                <h3>Azienda: <span id="azienda"> </span></h3>
+               
+                
+                <h3>address: <span id="indirizzo">   </span></h3>
+                
+                
+                <h3>Telefono: <span id="telefono">   </span></h3>
+                
+                
+        </div>
+
+        <div id="carica" style ="width: 200px">
+            <div id="counter">loading</div>
+            <div id="hr"></div>
+
+        </div>
+    </div>
+   </div>
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="js/script.js"></script>
+</body>
+</html>

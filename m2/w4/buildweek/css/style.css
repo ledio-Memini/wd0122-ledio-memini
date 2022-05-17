@@ -1,0 +1,35 @@
+.displayUser{
+    display:none;
+}
+
+.visibile{
+    display:block;
+}
+
+.counter{
+    font-size: 40px;
+}
+
+#hr{
+    height: 10px;
+    width: 10%;
+    margin-left: 0;
+    background-color: red;
+}
+
+#carica{
+    position: fixed;
+    top:50%;
+    right:28%
+}
+#inputId{
+    display: none;
+}
+h3{
+    color: red;
+}
+
+span{
+    color: black
+}
+
