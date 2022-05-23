@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: linear-gradient(yellow,rgb(212, 155, 8));
+            height:950px
+        }
+        h1{
+            margin: 10px 40px;
+        }
+        .contenitore{
+            display:flex;
+        }
+        .contenitore div{
+            font-size:2rem;
+            margin: 10px 40px;
+        }
+        #contenitore2{
+            font-size:2rem;
+            color:red;
+            margin: 10px 40px;
+        }
+        #rigioca{
+            margin-left: 40%;
+            margin-top: 100px;
+            font-size:2rem;
+            border-radius: 10px;
+            background-color:white;
+        }
+        #rigioca:hover{
+            cursor: pointer;
+            background-color:red;
+            transform: scale(1.5);
+            transition:0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>indovina il numero</h1>
+    <div class="contenitore">
+        <div id="gioc1">giocatore 1: </div>
+        <div id="gioc2">giocatore 2: </div>
+        <div id="random">risultato casuale: </div>
+    </div>
+    <div id="contenitore2"></div>
+
+    <button id="rigioca">Rigioca</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
