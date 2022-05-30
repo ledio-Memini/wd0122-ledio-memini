@@ -1,0 +1,16 @@
+<h1>welcome {{title}}</h1>
+
+<button (click)="aggiungi()">add</button>
+
+<ul>
+  <li *ngFor="let n of nomi">
+    {{n.nome}}
+    <a (click)="details(n.id)">dettagli</a>
+    <button (click)="elimina(0)">x</button>
+
+  </li>
+</ul>
+
+<div>
+  <h1>{{utenteSelezionato.nome}}</h1>
+</div>
