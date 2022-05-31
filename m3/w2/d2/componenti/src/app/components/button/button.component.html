@@ -1,0 +1,6 @@
+<button 
+class="btn btn-success"
+[disabled]="disabilitato"
+[innerText]=" disabilitato ? 'non puoi cliccare' : 'clicca'"
+(click)="disabilita()"
+>{{etichetta}}</button>
