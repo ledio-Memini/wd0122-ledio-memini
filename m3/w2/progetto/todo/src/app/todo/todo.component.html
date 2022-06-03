@@ -1,0 +1,15 @@
+<h1>lista delle cose da fare</h1>
+<div id="input" class="mt-4">
+    <input  type="text" nome="newTodo" [(ngModel)]="newTodo" placeholder="aggiungi cose da fare">
+    <button id="input1" (click)="save()">+</button>
+</div>
+<div id="todo">
+<ul *ngFor="let todos of todo">
+    <div *ngIf="todos.completed == false">
+    <li>{{todos.title}}</li>
+    <button class="btn btn-danger">elimina</button>
+    <button (click)="modifica()" class="btn btn-warning">modifica</button>
+    </div>
+</ul>
+</div>
+

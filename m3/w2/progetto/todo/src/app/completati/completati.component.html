@@ -1,0 +1,5 @@
+<h1 class="text-center mt-5 ">lista di cose completate</h1>
+
+<ul *ngFor="let todos of todo" >
+    <li *ngIf="todos.completed == true">{{todos.title}}</li>
+</ul>
