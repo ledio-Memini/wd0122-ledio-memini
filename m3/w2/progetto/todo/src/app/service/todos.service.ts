@@ -45,8 +45,8 @@ export class TodosService {
         }, 2000);
       });
     }*/
-    modificatodo():void{
-
+    remove(id:number):void{
+      this.todo.splice(id,1)
 
     }
 }

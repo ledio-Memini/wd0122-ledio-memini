@@ -1,0 +1,25 @@
+<h1>aggiungi utente</h1>
+<form>
+  <input type="text" name="first_name" placeholder="nome" [(ngModel)]="newUser.first_name">
+  <input type="text" name="last_name" placeholder="cognome" [(ngModel)]="newUser.last_name">
+  <button class="btn btn-primary" (click)="salvaUser()">crea</button>
+</form>
+
+
+<hr>
+
+<div class="container">
+<button class="btn btn-primary" (click)="fetchUser()">recupera utenti</button>
+
+<div>
+  <h1>utenti</h1>
+  <div *ngFor="let user of users">
+    {{user.first_name}}
+    {{user.last_name}}
+    <button (click)="eliminaUser(user.id)" class="btn btn-danger">delete</button>
+    <button (click)="setUser(user)" class="btn btn-warning">modifica</button>
+  </div>
+</div>
+<div >loading...</div>
+</div>
+<router-outlet></router-outlet>

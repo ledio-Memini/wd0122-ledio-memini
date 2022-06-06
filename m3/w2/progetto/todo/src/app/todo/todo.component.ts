@@ -21,19 +21,20 @@ export class TodoComponent implements OnInit {
   }
 
 
-  newId:number = 5
-  newTodo:string = ''
-  newcompleted:boolean = false
+  id:number = 5
+  todos:string = ''
+  completed:boolean = false
 
   save(){
-    let newTodo = new Class(this.newId,this.newTodo,this.newcompleted)
+    let newTodo = new Class(this.id,this.todos,this.completed)
     this.todosService.addtodo(newTodo)
-    this.newId++
-    this.newTodo = ''
+    this.id++
+    this.todos = ''
   }
-  modifica(){
-    this.newcompleted = !this.newcompleted
-    console.log(this.newcompleted)
+  rimuovi(){
+
+    this.todosService.remove(this.id)
+    console.log(this.id)
   }
 
   
