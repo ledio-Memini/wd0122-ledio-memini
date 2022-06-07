@@ -1,0 +1,152 @@
+
+<div class="container">
+    <h1>td from hero</h1>
+    <form (ngSubmit)="submit()" #f="ngForm" >
+        <div class="form-group">
+        <label for="nome">nome</label>
+        <input 
+        #nome="ngModel"
+        ngModel name="email"
+        required
+        id="nome"
+        type="nome"
+        class="form-control"
+        >
+        <div [style.color]="'white'" class="bg-danger" *ngIf="nome.invalid && nome.touched">campo obbligatorio</div>
+        </div>
+        <div class="form-group">
+        <label for="nome1">alter ego</label>
+        <input
+        #ego="ngModel" 
+        ngModel name="nome1"
+        required
+        id="nome1"
+        type="nome"
+        class="form-control"
+        >
+        <div
+        [style.color]="'white'" class="bg-danger"
+        *ngIf="ego.invalid && ego.touched"
+        >campo obbligatorio</div>
+
+        </div>
+        <div class="form-group">
+            <label for="super-potere">super potere</label>
+            <select  id="super-potere" #sp="ngModel" ngModel name="superpotere" required class="form-control">
+                <option value="Volare">Volare</option>
+                <option value="Velocita-della-luce">Velocita della luce</option>
+                <option value="super-forza">super forza</option>
+            </select>
+            <div
+            [style.color]="'white'" class="bg-danger"
+            *ngIf="sp.invalid && sp.touched"
+            >campo obbligatorio</div>
+        </div>
+        <div class="form-group">
+            <label for="nome2">nemico</label>
+            <input
+            #nemico="ngModel" 
+            ngModel name="nome2"
+            required
+            maxlength="10"
+            id="nome2"
+            type="nome"
+            class="form-control"
+            >
+        </div>
+        <div class="form-group">
+            <label for="nome3">pianeta</label>
+            <input
+            #pianeta="ngModel" 
+            ngModel name="nome3"
+            required
+            minlength="5"
+            id="nome3"
+            type="nome"
+            class="form-control"
+            >
+            <div
+            [style.color]="'white'" class="bg-danger"
+            *ngIf="pianeta.invalid && pianeta.touched"
+            >campo obbligatorio</div>
+            <div class="bg-danger" *ngIf="ego.value.length > 5 && pianeta.touched">deve essere minimo 5 caratteri</div>
+        </div>
+
+        <div class="form-group">
+            <label for="nome4">debolezza</label>
+            <input
+            #debolezza="ngModel" 
+            ngModel name="nome4"
+            required
+            id="nome4"
+            type="nome"
+            class="form-control"
+            >
+
+        </div>
+        
+
+        <button [disabled]="!f.valid" class="btn btn-primary">crea</button>
+        <p *ngIf="f.invalid">compila tutti i campi per poter inviare il form</p>
+    </form>
+</div>
+
+
+<!--REACTIVE FORM-->
+
+<div class="container">
+    <h1>reactive form hero</h1>
+    <form [formGroup]="form" (ngSubmit)="submit()" #f>
+
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input 
+            formControlName="email"
+            id="email"
+            type="email"
+            class="form-control"
+            placeholder="email">
+            <p [style.color]="'red'"
+            *ngIf="
+            getFormC('email')?.invalid &&
+            getFormC('email')?.touched
+            "
+            >campo obbligatorio</p>
+            </div>
+            <div class="form-group">
+            <label for="password">Email</label>
+            <input
+            formControlName="password"
+            id="password"
+            type="password"
+            class="form-control"
+            placeholder="password">
+            <p
+            [style.color]="'red'"
+            *ngIf="
+            getFormC('password')?.invalid &&
+            getFormC('password')?.touched
+            "
+            >campo obbligatorio</p>
+            </div>
+
+        <div class="form-group">
+            <label for="city">città</label>
+            <select  id="city" formControlName="city" name="city" class="form-control">
+                <option value="">seleziona</option>
+                <option value="Roma">Roma</option>
+                <option value="Milano">Milano</option>
+                <option value="Napoli">Napoli</option>
+            </select>
+        </div>
+        <h3 for="city">sports</h3>
+        <button class="btn btn-danger" (click)="addSport()">aggiungi sport</button>
+        <div class="form-group" *ngFor="let sport of getSportFields(); let i = index">
+            <input type="text" class="form-control" [formControlName]="'sport' + i">
+        </div>
+
+
+        <button  class="btn btn-primary">invia</button>
+       
+    </form>
+</div>
