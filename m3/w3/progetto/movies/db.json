@@ -1,0 +1,10 @@
+{
+  "users": [
+    {
+      "email": "eg@aa.com",
+      "password": "$2a$10$CRHfQkx1rsYIU4ABl7vajuM6FtRashoeOh4Gi/g2pl0X.HSC6x3.6",
+      "id": 1
+    }
+  ],
+  "movies": []
+}

@@ -1,0 +1,13 @@
+<div class="container">
+<h1>Film del momento</h1>
+
+<div class="card" *ngFor="let movie of movies">
+    <div class="card-item"></div>
+    <ul>
+        <li><p>titolo:</p>{{movie.nome}}</li>
+        <li><p>trama:</p>{{movie.trama}}</li>
+        <li><p>durata:</p>{{movie.durata}}</li>
+    </ul>
+    <button>aggiungi ai preferiti</button>
+</div>
+</div>

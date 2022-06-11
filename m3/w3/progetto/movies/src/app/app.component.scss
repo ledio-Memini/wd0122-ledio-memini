@@ -1,0 +1,36 @@
+.dashboard-layout{
+  height: 100%;
+}
+
+mat-chip{
+  background-color:rgb(229, 175, 14);
+  font-size:2rem;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  padding: 10px;
+}
+
+a{
+  text-decoration:none;
+  color:white;
+}
+#primo{
+  background-color:rgb(64, 138, 236)
+}
+
+
+.logout{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom:20px;
+  font-size:2rem;
+  background-color: red;
+}
+#log{
+  margin-left: 0;
+}
+
+

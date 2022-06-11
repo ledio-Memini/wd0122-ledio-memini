@@ -1,0 +1,40 @@
+.card{
+    height:700px;
+    width: 1000px;
+    border: 1px solid black;
+    margin-left:25%;
+    background-color:grey;
+    text-align:center;
+    margin:40px auto;
+}
+.card-item{
+    height:250px;
+    background-color:rgb(144, 244, 81);
+}
+
+ul{
+    list-style-type: none;
+}
+p{
+    font-weight: bold;
+    font-size:1.5rem;
+}
+.container{
+    text-align:center;
+    background-color:white
+}
+
+button{
+    font-size:2.5rem;
+    background-color:red;
+    padding: 10px;
+    border-radius: 5px;
+}
+button:hover{
+    cursor:pointer;
+}
+h1{
+    font-size:2.5rem;
+    color:red;
+
+}

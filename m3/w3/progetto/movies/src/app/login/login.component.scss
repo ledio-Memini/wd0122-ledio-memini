@@ -1,0 +1,26 @@
+#login{
+    border: 1px solid black;
+    background-color:grey;
+    text-align:center;
+}
+h1{
+    font-size:3rem;
+}
+
+input{ 
+    height:30px;
+    width:350px;
+    margin:20px;
+    border-radius: 5px;
+}
+button{
+    font-size:1.6rem;
+    border-radius: 5px;
+    padding:5px
+
+}
+button:hover{
+    cursor: pointer;
+    background-color:green;
+    color:white;
+}

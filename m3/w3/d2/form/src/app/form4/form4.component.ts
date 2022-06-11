@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormArray, FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
+import { AbstractControl, FormArray, FormBuilder, FormControl, FormGroup, NgForm, ValidationErrors, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form4',
@@ -24,7 +24,7 @@ form!:FormGroup
         email: this.fb.control(null,[Validators.required , Validators.email, this.emailProibite]),
         password: this.fb.control(null,Validators.required),
         city: this.fb.control(null),
-        sports: this.fb.control([]) 
+        sports: this.fb.array([]) 
       }) 
       //ricevo lo stream dei capi di stato
       this.form.statusChanges.subscribe(value => console.log(value));
@@ -59,6 +59,17 @@ form!:FormGroup
   submit(){
     console.log(this.form)
     
+  }
+
+  emailProibiteAsync = (formControl:AbstractControl)=>{
+    return new Promise<ValidationErrors | null>((resolve, reject))=>{
+      setTimeout(()=>{
+        if(this.listaEmailProibite.includes(formControl.value)){
+          return { emailProibite : true
+        }}
+        return null
+      }, 2000)
+    }
   }
 
 }

@@ -1,0 +1,18 @@
+<div id="primo">
+<mat-chip-list aria-label="Fish selection" >
+    <ul >
+      <mat-chip><li ><a [routerLink]="['/']">Home</a></li></mat-chip>
+      <mat-chip><li ><a [routerLink]="['/profilo']">Profilo</a></li></mat-chip>
+      <mat-chip><li ><a [routerLink]="['/info']">movies</a></li></mat-chip>
+      <mat-chip><li ><a [routerLink]="['/']">Login</a></li></mat-chip>
+      <mat-chip><li ><a [routerLink]="['/register']">register</a></li></mat-chip>
+      <button class="logout" (click)="logout()">Logout</button>
+    </ul>
+</mat-chip-list>
+
+
+
+<router-outlet></router-outlet>
+
+
+
