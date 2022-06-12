@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-info',
@@ -27,6 +28,16 @@ export class InfoComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+  }
+
+  aggiungi(){
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'il film è stato aggiunto alla lista preferiti',
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
 
 }

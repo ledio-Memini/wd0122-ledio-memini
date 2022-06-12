@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { AuthService } from '../auth.service';
 
 @Component({
@@ -23,6 +24,7 @@ export class LoginComponent implements OnInit {
     this.auth.login(this.authData).subscribe((res:any) => {
       console.log(res);
       this.auth.logUser(res.accessToken)
+      Swal.fire('login eseguito con successo','potrai accedere alla pagina PROFILO e MOVIES');
     })
   }
 

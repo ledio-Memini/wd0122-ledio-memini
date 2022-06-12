@@ -10,6 +10,7 @@ export class UserService {
 
   apiUrlRegister:string = 'http://localhost:4201/register';
   apiUrl:string = 'http://localhost:4201/users';
+  apimovie:string = 'https://localhost:4201/api/movie/popular'
 
   registerUser(user:any) {
     return this.http.post(this.apiUrlRegister, user)
@@ -17,5 +18,8 @@ export class UserService {
 
   getUser(id:number) {
     return this.http.get(this.apiUrl+'/'+id)//'http://localhost:4201/users/1'
+  }
+  datiUtente(datiutente:any){
+    return this.http.get(this.apiUrl, datiutente)
   }
 }
