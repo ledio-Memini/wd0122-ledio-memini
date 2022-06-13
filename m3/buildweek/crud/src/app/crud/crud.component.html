@@ -1,0 +1,21 @@
+<h1>angular 13 crud</h1>
+
+<table>
+    <button class="btn btn-success mb-2" >create new post</button>
+    <tr class="head">
+        <td>id</td>
+        <td>title</td>
+        <td>body</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr *ngFor="let book of books">
+        <td>{{book.id}}</td>
+        <td>{{book.nome}}</td>
+        <td>{{book.trama}}</td>
+        <td><button class="btn btn-success">update post</button></td>
+        <td><button class="btn btn-danger">elimina post</button></td>
+    </tr>
+</table>
+
+

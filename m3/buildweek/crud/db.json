@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "email": "ale@ale.com",
+      "password": "$2a$10$/FG8p0mwrg9USiqxeuRyjOsTYDdL.3w2w86/l7HXWGtmRKYwffxju",
+      "nome": "le",
+      "cognome": "dio",
+      "id": 1
+    },
+    {
+      "email": "olo@olo.com",
+      "password": "$2a$10$oxz8iENVekmJXUgm.Irwrub2ELHTrF6aJAFwx/McoR7hIuSEDrVqa",
+      "nome": "avgr",
+      "cognome": "aaerg",
+      "id": 2
+    }
+  ]
+}
