@@ -1,7 +1,7 @@
 <h1>angular 13 crud</h1>
 
 <table>
-    <button class="btn btn-success mb-2" >create new post</button>
+    <button class="btn btn-success mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="visible2 = !visible2">create new post</button>
     <tr class="head">
         <td>id</td>
         <td>title</td>
@@ -11,11 +11,32 @@
     </tr>
     <tr *ngFor="let book of books">
         <td>{{book.id}}</td>
-        <td>{{book.nome}}</td>
-        <td>{{book.trama}}</td>
-        <td><button class="btn btn-success">update post</button></td>
-        <td><button class="btn btn-danger">elimina post</button></td>
+        <td>{{book.title}}</td>
+        <td>{{book.body}}</td>
+        <td><button class="btn btn-success" (click)="visible = !visible">update post</button></td>
+        <td><button class="btn btn-danger" (click)="delete(book.id)">elimina post</button></td>
     </tr>
 </table>
+
+<div id="update" *ngIf="visible">
+    <h2>update post</h2>
+<form>
+    <input type="number" class="form-control my-2"  placeholder="id">
+    <input type="text" class="form-control my-2"  placeholder="title">
+    <input type="text" class="form-control my-2" placeholder="body">
+    <button class="btn btn-primary">update</button>
+</form>
+</div>
+
+<div id="update" *ngIf="visible2">
+    <h2>create new post</h2>
+<form>
+    <input type="text" class="form-control my-2" nome="newbook" [(ngModel)]="title" placeholder="title">
+    <input type="text" class="form-control my-2" nome="newbook" [(ngModel)]="body" placeholder="body">
+    <button class="btn btn-primary" (click)="create()">create</button>
+</form>
+</div>
+
+
 
 

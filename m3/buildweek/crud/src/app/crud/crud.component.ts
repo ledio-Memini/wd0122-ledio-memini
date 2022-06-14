@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Observable } from 'rxjs';
+import { Class } from '../class';
 
 @Component({
   selector: 'app-crud',
@@ -9,50 +11,71 @@ import { Observable } from 'rxjs';
 })
 export class CrudComponent implements OnInit {
 
-  constructor(private httpClient: HttpClient) { }
+  closeResult!: string;
+
+  constructor(private httpClient: HttpClient, modalService: NgbModal) { }
 
   
-  
-  getAlbums():Observable <Object>{
-    return this.httpClient.get('https://jsonplaceholder.typicode.com/albums')
-  }
+
   ngOnInit(): void {
-    this.getAlbums().subscribe(this.callback)
-    console.log(this.books)
+
     
   }
-  callback = (res:any) => {
-    console.log(res)
-  }
 
 
-  books = [
+
+  books :Class[]= [
     { 
-      nome:'Lo straniero',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:1
+      id:1,
+      title:'Lo straniero',
+      body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur'
     },
     { 
-      nome:'Alla ricerca del tempo perduto',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:2
+      id:2,
+      title:'Alla ricerca del tempo perduto',
+      body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur'
     },
     { 
-      nome:'Il processo',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:3
+      id:3,
+      title:'Alla ricerca del tempo perduto',
+      body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur'
     },
     { 
-      nome:'Il piccolo principe',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:4
+      id:4,
+      title:'Alla ricerca del tempo perduto',
+      body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur'
     },
     { 
-      nome:'Il vecchio e il mare',
-      trama:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur',
-      id:5
+      id:5,
+      title:'Alla ricerca del tempo perduto',
+      body:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque aliquid reprehenderit fuga nulla ipsam? Aspernatur'
     }
   ]
   apiUrl:string = ('https://jsonplaceholder.typicode.com/albums')
+
+  delete(id:number):void{
+
+    let index:number = this.books.findIndex(book => book.id === id)
+    this.books.splice(index,1)
+
+  }
+  visible = false
+  visible2 = false
+
+  id:number = 5
+  title:string = ''
+  body:string = ''
+
+  create(){
+    let newbook = new Class (this.id,this.title,this.body)
+    this.books.push(newbook)
+    this.id++
+    this.title = ''
+    this.body = ''
+  }
+
+
+
+  
 
 }

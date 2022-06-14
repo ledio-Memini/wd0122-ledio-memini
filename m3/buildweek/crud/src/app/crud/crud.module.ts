@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { CrudRoutingModule } from './crud-routing.module';
 import { CrudComponent } from './crud.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +13,10 @@ import { CrudComponent } from './crud.component';
   ],
   imports: [
     CommonModule,
-    CrudRoutingModule
+    CrudRoutingModule,
+    NgbModule,
+    FormsModule
+
   ]
 })
 export class CrudModule { }
