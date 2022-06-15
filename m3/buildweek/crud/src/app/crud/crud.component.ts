@@ -15,34 +15,40 @@ import { Ibooks } from '../ibooks';
 export class CrudComponent implements OnInit {
 
   closeResult!: string;
-  id: number | undefined;
+  id!: number 
 
   constructor(private httpClient: HttpClient, private modalService: NgbModal, private crudsrt:CrudService) { }
 
   
 
   ngOnInit(): void {
-
+    this.getposts()
     
   }
-  books = [{
-    id:'',
-    title: '',
-    body:''
-  }
+  books:Ibooks[] = []
+
+  bookmodificato:Ibooks[] = [
   ]
+
   getposts(){
-    this.crudsrt.aggiungipost({id:this.id, title:this.title, body:this.body}).subscribe()
+    this.crudsrt.getposts().subscribe((res) =>{
+    this.books = res
+    })
   }
+
+
 
 
 
 
   delete(id:number):void{
 
-    //let index:number = this.books.findIndex(book => book.id === id)
-    //this.books.splice(index,1)
-    this.crudsrt.removepost(id).subscribe(() =>{
+    this.crudsrt.removepost(id).subscribe((res) =>{
+      let index = this.books.filter((book) => book.id !== id)
+      this.books = index
+      console.log(res)
+
+      
 
       Swal.fire({
         position: 'top-end',
@@ -67,6 +73,8 @@ export class CrudComponent implements OnInit {
     this.crudsrt.aggiungipost({title:this.title, body:this.body}).subscribe( (res) => {
       console.log(res)
       res = this.books
+      this.title = ''
+      this.body = ''
       Swal.fire({
         position: 'top-end',
         icon: 'success',
