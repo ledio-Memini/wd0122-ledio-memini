@@ -13,6 +13,52 @@
       "nome": "avgr",
       "cognome": "aaerg",
       "id": 2
+    },
+    {
+      "email": "dio@dio.com",
+      "password": "$2a$10$d9kjQM6kJiBuGfCU5vc7AubrIvb3wthM2SvKlZFgYCz2FaFpUBdSa",
+      "nome": "wqr",
+      "cognome": "wer",
+      "id": 3
+    },
+    {
+      "email": "cane@cane.com",
+      "password": "$2a$10$vjaSOh3T.QIW/V95OgpelO7cJFwrSBth2CFrooZE4YQPPZyLjAdse",
+      "id": 4
+    },
+    {
+      "email": "porco@porco.com",
+      "password": "$2a$10$HfhiUbvhk77Nu4URllyqh.CpJKQu4KNL1vno..vnnxrV103EOPICO",
+      "nome": "serh",
+      "cognome": "rsth",
+      "id": 5
+    }
+  ],
+  "posts": [
+    {
+      "title": "df",
+      "body": "gdf",
+      "id": 1
+    },
+    {
+      "title": "zreg",
+      "body": "erdg",
+      "id": 2
+    },
+    {
+      "title": "werag",
+      "body": "af",
+      "id": 3
+    },
+    {
+      "title": "rth",
+      "body": "rth",
+      "id": 4
+    },
+    {
+      "title": "rthrth",
+      "body": "rthtrh",
+      "id": 5
     }
   ]
 }

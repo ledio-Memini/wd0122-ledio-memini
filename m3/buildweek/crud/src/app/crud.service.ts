@@ -1,16 +1,19 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { observable } from 'rxjs';
+import { Ibooks } from './ibooks';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CrudService {
+export class CrudService  {
 
   constructor(private http:HttpClient) { }
 
   apiUrlRegister:string = 'http://localhost:4201/register';
   apiUrl:string = 'http://localhost:4201/users';
-  apimovie:string = 'https://localhost:4201/api/movie/popular'
+  apimovie:string = 'https://localhost:4201/api/album/popular'
+  apiposts:string = "http://localhost:4201/posts"
 
   registerUser(user:any) {
     return this.http.post(this.apiUrlRegister, user)
@@ -21,5 +24,15 @@ export class CrudService {
   }
   datiUtente(datiutente:any){
     return this.http.get(this.apiUrl, datiutente)
+  }
+
+  removepost(id:number){
+    return this.http.delete(this.apiposts+ id)
+  }
+  aggiungipost(p:Ibooks){
+    return this.http.post(this.apiposts,p)
+  }
+  getposts(){
+    return this.http.get(this.apiposts)
   }
 }

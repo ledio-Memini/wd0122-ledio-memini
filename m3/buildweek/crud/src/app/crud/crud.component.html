@@ -9,13 +9,13 @@
         <td></td>
         <td></td>
     </tr>
-    <tr *ngFor="let book of books">
+   <tr *ngFor="let book of books">
         <td>{{book.id}}</td>
         <td>{{book.title}}</td>
         <td>{{book.body}}</td>
         <td><button class="btn btn-success" (click)="visible = !visible">update post</button></td>
-        <td><button class="btn btn-danger" (click)="delete(book.id)">elimina post</button></td>
-    </tr>
+        <td><button class="btn btn-danger" >elimina post</button></td>
+    </tr> 
 </table>
 
 <div id="update" *ngIf="visible">
@@ -31,8 +31,8 @@
 <div id="update" *ngIf="visible2">
     <h2>create new post</h2>
 <form>
-    <input type="text" class="form-control my-2" nome="newbook" [(ngModel)]="title" placeholder="title">
-    <input type="text" class="form-control my-2" nome="newbook" [(ngModel)]="body" placeholder="body">
+    <input type="text" class="form-control my-2" nome="title" [(ngModel)]="title" placeholder="title" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="body" [(ngModel)]="body" placeholder="body" [ngModelOptions]="{standalone: true}">
     <button class="btn btn-primary" (click)="create()">create</button>
 </form>
 </div>

@@ -14,7 +14,8 @@ const routes: Routes = [
   },
   { 
     path: 'crud',
-     loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) 
+    canActivate: [CrudGuard],
+    loadChildren: () => import('./crud/crud.module').then(m => m.CrudModule) 
   }
 ];
 
