@@ -16,7 +16,7 @@ export class CrudComponent implements OnInit {
 
   closeResult!: string;
   id!: number 
-
+  
   constructor(private httpClient: HttpClient, private modalService: NgbModal, private crudsrt:CrudService) { }
 
   
@@ -36,9 +36,22 @@ export class CrudComponent implements OnInit {
     })
   }
 
+  openupdate(book:Ibooks){
+    this.visible = true
+    this.id = book.id!
+    this.title = book.title
+    this.body = book.body
 
 
+  }
 
+  modifica(){
+    this.crudsrt.modificapost(this.id,{body:this.body,title:this.title}).subscribe((res) =>{
+      console.log(res);
+      this.getposts()
+
+   })
+  }
 
 
   delete(id:number):void{

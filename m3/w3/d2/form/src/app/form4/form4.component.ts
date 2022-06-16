@@ -61,16 +61,6 @@ form!:FormGroup
     
   }
 
-  emailProibiteAsync = (formControl:AbstractControl)=>{
-    return new Promise<ValidationErrors | null>((resolve, reject))=>{
-      setTimeout(()=>{
-        if(this.listaEmailProibite.includes(formControl.value)){
-          return { emailProibite : true
-        }}
-        return null
-      }, 2000)
-    }
-  }
 
 }
 

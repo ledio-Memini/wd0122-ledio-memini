@@ -13,7 +13,7 @@
         <td>{{book.id}}</td>
         <td>{{book.title}}</td>
         <td>{{book.body}}</td>
-        <td><button class="btn btn-success" (click)="visible = !visible">update post</button></td>
+        <td><button class="btn btn-success" (click)="openupdate(book)">update post</button></td>
         <td><button class="btn btn-danger" (click)="delete(book.id!)" >elimina post</button></td>
     </tr> 
 </table>
@@ -21,10 +21,10 @@
 <div id="update" *ngIf="visible">
     <h2>update post</h2>
 <form>
-    <input type="number" class="form-control my-2"  placeholder="id">
-    <input type="text" class="form-control my-2" nome="title" [(ngModel)]="title"  placeholder="title">
-    <input type="text" class="form-control my-2" nome="body" [(ngModel)]="body" placeholder="body">
-    <button class="btn btn-primary">update</button>
+    <input type="number" class="form-control my-2"  nome="id" [(ngModel)]="id" placeholder="id" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="title" [(ngModel)]="title"  placeholder="title" [ngModelOptions]="{standalone: true}">
+    <input type="text" class="form-control my-2" nome="body" [(ngModel)]="body" placeholder="body" [ngModelOptions]="{standalone: true}">
+    <button class="btn btn-primary" (click)="modifica()">update</button>
 </form>
 </div>
 

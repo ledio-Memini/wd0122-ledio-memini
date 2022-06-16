@@ -34,8 +34,8 @@ export class CrudService  {
     return this.http.post(this.apiposts,p)
   }
 
-  modificapost(p:Ibooks){
-    return this.http.patch(this.apiposts,p)
+  modificapost(id:number,p:Ibooks){
+    return this.http.patch(this.apiposts+"/" +id,p)
   }
 
   getposts():Observable<Ibooks[]>{
