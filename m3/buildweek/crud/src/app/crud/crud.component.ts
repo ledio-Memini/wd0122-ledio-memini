@@ -50,6 +50,14 @@ export class CrudComponent implements OnInit {
       console.log(res);
       this.getposts()
 
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'il post e stato modificato con successo',
+        showConfirmButton: false,
+        timer: 1500
+      })
+
    })
   }
 
