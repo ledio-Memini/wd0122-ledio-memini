@@ -18,7 +18,7 @@ export class CrudComponent implements OnInit {
   id!: number 
   
   constructor(private httpClient: HttpClient, private modalService: NgbModal, private crudsrt:CrudService) { }
-
+  
   
 
   ngOnInit(): void {
@@ -27,8 +27,7 @@ export class CrudComponent implements OnInit {
   }
   books:Ibooks[] = []
 
-  bookmodificato:Ibooks[] = [
-  ]
+  visible3 = false
 
   getposts(){
     this.crudsrt.getposts().subscribe((res) =>{
@@ -37,10 +36,10 @@ export class CrudComponent implements OnInit {
   }
 
   openupdate(book:Ibooks){
-    this.visible = true
     this.id = book.id!
     this.title = book.title
     this.body = book.body
+ 
 
 
   }

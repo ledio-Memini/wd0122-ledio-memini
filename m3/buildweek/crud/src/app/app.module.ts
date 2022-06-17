@@ -7,11 +7,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AuthInterceptor } from './auth.interceptor';
+import { AutoscrollDirective } from './autoscroll.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AutoscrollDirective
   ],
   imports: [
     BrowserModule,
