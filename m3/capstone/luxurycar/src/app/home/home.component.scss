@@ -1,0 +1,36 @@
+#home{
+    background-image: url("../../assets/immaginehome/home.jpg");
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+#titolo{
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    box-shadow:0 0 6px 0 rgba(29,29,29,0.0203);
+
+}
+h1{
+    font-size:5.5rem;
+    color: orangered;
+    padding-top: 100px;
+}
+.img{
+    width: 1200px;   
+    height:800px;   
+    display:block;
+    margin:0px auto;
+    text-align:center;
+    background-size: cover;
+}
+
+main{
+    background:linear-gradient(black, white)
+}
+h2{
+    color: red;
+    text-align: center;
+    font-size:3.5rem
+}

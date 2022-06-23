@@ -1,0 +1,26 @@
+<div class="bg-img">
+    <div class="content">
+        <header>login</header>
+        <form action="#">
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="email" [(ngModel)]="authData.email" name="email" required placeholder="email">
+            </div>
+            <div class="field space">
+                <span class="fa fa-user"></span>
+                <input type="password" [(ngModel)]="authData.password" name="password" required class="pass-key" placeholder="password">
+            </div>
+            <div class="pass">
+                <a href="#">Forgot Password? Get Lost.</a>
+            </div>
+
+                <button id=login class="btn btn-primary" (click)="login()">login</button>
+
+
+
+        </form>
+
+    </div>
+
+</div>
+    

@@ -8,9 +8,11 @@ import { AuthService } from './auth.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
 
+export class AppComponent {
   constructor(private authService: AuthService, private router: Router) {}
+
+
 
   logout(){
     this.authService.logout();

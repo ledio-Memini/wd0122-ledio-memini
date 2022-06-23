@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "lediothegod@gmail.com",
+      "password": "$2a$10$dmsDJvaO0KHiOrCPnG6p6.YIwNPyFngmHYDVvfAreygU9tt3vhRJ2",
+      "nome": "ledio",
+      "cognome": "memini",
+      "id": 1
+    },
+    {
+      "email": "erger@wef.com",
+      "password": "$2a$10$3bPL9cEWuVl7YM0mVUK9NO4/vF6HwzwMQ5ImhbyAZGbwUdNIYzoLm",
+      "nome": "wefwef",
+      "cognome": "tbgtr",
+      "id": 2
+    },
+    {
+      "email": "eggggg@wef.com",
+      "password": "$2a$10$aY7mmX.2jONeO8bDlsNIsumtYhUewhUpFsiK7d4pRl6nt2ERd6U.O",
+      "nome": "wefwef",
+      "cognome": "tbgtr",
+      "id": 3
+    },
+    {
+      "email": "yuk@yukyu",
+      "password": "$2a$10$xAGQeO2MD/Igj74q5S7v5OjUr62mUXpavA7v9ayVf1uz.LPzXbSC.",
+      "nome": "tnhr",
+      "cognome": "yuk",
+      "id": 4
+    },
+    {
+      "email": "ggg@ggg",
+      "password": "$2a$10$lPezd.37zUwcQbDdTl8HIuG/YYo5QXcYrtiYrDusHgMFnSzPf/vPe",
+      "nome": "ggg",
+      "cognome": "ggg",
+      "id": 5
+    }
+  ]
+  
+}

@@ -1,0 +1,22 @@
+<div id="home">
+
+</div>
+<main>
+
+  <div id="inevidenza">
+    <h2>auto in evidenza</h2>
+  <ngb-carousel  class="carousel">
+      <ng-template  *ngFor="let img of images" ngbSlide class="slide">
+        <div class="picsum-img-wrapper">
+          <img class="img" [src]="img.src" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{img.nome}}</h3>
+          <p>prezzo: €{{img.prezzo}}</p>
+        </div>
+      </ng-template>
+    
+    </ngb-carousel>
+  </div>
+
+</main>

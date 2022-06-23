@@ -1,0 +1,31 @@
+<div class="bg-img">
+    <div class="content">
+        <header>register</header>
+        <form action="#">
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" [(ngModel)]="authData.nome" name="nome" required placeholder="nome">
+            </div>
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="text" [(ngModel)]="authData.cognome" name="cognome" required placeholder="cognome">
+            </div>
+            <div class="field">
+                <span class="fa fa-user"></span>
+                <input type="email" [(ngModel)]="authData.email" name="email" required placeholder="email">
+            </div>
+            <div class="field space">
+                <span class="fa fa-user"></span>
+                <input type="password" required class="pass-key" [(ngModel)]="authData.password" name="password" placeholder="password">
+            </div>
+
+
+                <button id=login class="btn btn-success" (click)="register()">register</button>
+
+
+
+        </form>
+
+    </div>
+
+</div>
