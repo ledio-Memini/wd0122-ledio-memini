@@ -14,16 +14,5 @@ export class AppComponent {
 
 
 
-  logout(){
-    this.authService.logout();
-    Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      title: 'sei stato sloggato',
-      showConfirmButton: false,
-      timer: 1500
-    })
 
-    this.router.navigate(['/login'])
-  }
 }

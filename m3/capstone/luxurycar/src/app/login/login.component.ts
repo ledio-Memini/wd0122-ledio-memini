@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
     this.auth.login(this.authData).subscribe((res:any) => {
       console.log(res);
       this.auth.logUser(res.accessToken)
-      this.router.navigate(['/home'])
+      this.router.navigate(['/'])
 
       Swal.fire({
         position: 'center',

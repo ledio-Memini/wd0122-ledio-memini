@@ -19,4 +19,37 @@
     </ngb-carousel>
   </div>
 
+  <div id="onsale">
+    <h2>auto on sale</h2>
+  <ngb-carousel  class="carousel">
+      <ng-template  *ngFor="let sale of onsale" ngbSlide class="slide">
+        <div class="picsum-img-wrapper">
+          <img class="img" [src]="sale.src" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{sale.nome}}</h3>
+          <s>prezzo: €{{sale.prezzo}}</s>
+          <p>prezzo scontato: €{{sale.prezzo1}}</p>
+        </div>
+      </ng-template>
+    
+    </ngb-carousel>
+  </div>
+
+  <div id="special">
+    <h2>auto limited edition</h2>
+  <ngb-carousel  class="carousel">
+      <ng-template  *ngFor="let specials of special" ngbSlide class="slide">
+        <div class="picsum-img-wrapper">
+          <img class="img" [src]="specials.src" alt="Random first slide">
+        </div>
+        <div class="carousel-caption">
+          <h3>{{specials.nome}}</h3>
+          <p>prezzo: €{{specials.prezzo}}</p>
+        </div>
+      </ng-template>
+    
+    </ngb-carousel>
+  </div>
+
 </main>

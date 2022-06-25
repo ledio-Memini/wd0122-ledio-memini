@@ -1,0 +1,38 @@
+<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs justify-content-center">
+    <li class="nav-item">
+      <div id="home">
+      <a [routerLink]="['/']">HOME</a>
+      </div>
+    </li>
+    
+    <li id="azienda" class="nav-item m-3">
+      <a [routerLink]="['/azienda']">azienda</a>
+    </li>
+
+    <li ngbDropdown class="nav-item m-3">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>lusso</a>
+      <div ngbDropdownMenu class="tendina">
+        <button ngbDropdownItem>Rolls-Royce</button>
+        <button ngbDropdownItem>Bentley</button>
+        <button ngbDropdownItem>Maybach</button>
+        <button ngbDropdownItem>Mansory</button>
+      </div>
+    </li>
+    <li ngbDropdown class="nav-item m-3">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>sportive</a>
+      <div ngbDropdownMenu class="tendina">
+        <button ngbDropdownItem>Lamborghini</button>
+        <button ngbDropdownItem>Ferrari</button>
+        <button ngbDropdownItem>Bugatti</button>
+        <button ngbDropdownItem>Porsche</button>
+        <button ngbDropdownItem>Maserati</button>
+      </div>
+    </li>
+    <li ngbNavItem class="ms-auto">
+        <a [routerLink]="['/login']"><button class="btn btn-primary mx-1 mt-3">login</button></a>
+        <a [routerLink]="['/register']"><button class="btn btn-success mx-1 mt-3">register</button></a>
+        <a ><button class="btn btn-danger mx-1 mt-3 " (click)="logout()">logout</button></a>
+      
+    </li>
+
+  </ul>
