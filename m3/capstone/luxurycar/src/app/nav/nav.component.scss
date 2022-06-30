@@ -27,8 +27,21 @@ ul{
 .tendina button{
     font-size:2rem;
     padding:15px;
+    position: relative;
 }
 .tendina button:hover{
     background-color:black;
     color: white;
 }
+
+.nav-tabs{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+.nav-link img{
+    height:50px;
+    width:50px;
+}
+

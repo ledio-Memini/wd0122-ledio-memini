@@ -1,1 +1,60 @@
+<div class="azienda">
 
+    <h2>dove siamo</h2>
+<div  class="container">
+    <div id="dove"></div>
+</div>
+
+<div class="container">
+    <h2>valori</h2>
+    <div class="row">
+        <div class="col-4">
+            <h4>COSA OFFRIAMO</h4>
+            <img src="../../assets/staff/fatto.jpg">
+            <h3> Certezza e qualità</h3>
+            <p>Lediolux si è posta come obiettivo quello di offrire il massimo della qualità nella vendita di automobili di prestigio. I responsabili hanno come unico target quello di offrire al cliente l’auto che desidera, in quanto l’organizzazione ha l’esperienza necessaria per un servizio completo chiavi in mano.</p>
+        </div>
+        <div class="col-4">
+            <h4>LA NOSTRA PROMESSA</h4>
+            <img src="../../assets/staff/best-seller.jpg">
+            <h3>  Sarà il vostro migliore acquisto</h3>
+            <p>Lediolux è sinonimo di affidabilità e professionalità, qualità riconosciute dai nostri clienti storici che, nel tempo, continuano ad avere fiducia del nostro operato. Chi acquista un’auto da noi sa, infatti, che saremo al suo fianco, sia durante le fasi dell’acquisto che per l’assistenza post-vendita.</p>
+        </div>
+        <div class="col-4">
+            <h4>OFFERTE ESCLUSIVE</h4>
+            <img src="../../assets/staff/diamond.jpg">
+            <h3>Per noi il cliente è importante</h3>
+            <p>Lediolux si distingue anche nel servizio post-vendita, offrendo alla propria clientela un trattamento fatto di costante attenzione e cortesia, prima, durante e soprattutto dopo l’acquisto.
+            Non offriamo quindi solo auto esclusive, ma ci posizioniamo come punto di riferimento a beneficio del cliente.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div><h2>staff</h2></div>
+    <div class="row">
+    <div  *ngFor="let staff of staffs" class="card col-3">
+        <img [src]="staff.src" alt="">
+        <h3>{{staff.nome}}</h3>
+        <p>professione: {{staff.prof}}</p>
+        <p>numero: {{staff.num}}</p>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+
+    <div><h2>marchi trattati</h2></div>
+    <div class="row">
+        <img src="../../assets/marchi/bentley.jpg">
+        <img src="../../assets/marchi/maybach.jpg">
+        <img src="../../assets/marchi/mansory.jpg">
+        <img src="../../assets/marchi/maserati.jpg">
+        <img src="../../assets/marchi/lamborghini.jpg">
+        <img src="../../assets/marchi/ferrari.jpg">
+        <img src="../../assets/marchi/bugatti.jpg">
+        <img src="../../assets/marchi/porsche.jpg">
+        <img src="../../assets/marchi/rolls.jpg">
+    </div>
+</div>
+</div>

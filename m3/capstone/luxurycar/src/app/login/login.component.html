@@ -11,7 +11,7 @@
                 <input type="password" [(ngModel)]="authData.password" name="password" required class="pass-key" placeholder="password">
             </div>
             <div class="pass">
-                <a href="#">Forgot Password? Get Lost.</a>
+                <a [routerLink]="['/register']">Non sei ancora registrato? clicca qui</a>
             </div>
 
                 <button id=login class="btn btn-primary" (click)="login()">login</button>
