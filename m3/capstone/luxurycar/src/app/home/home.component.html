@@ -8,7 +8,7 @@
   <ngb-carousel  class="carousel">
       <ng-template  *ngFor="let img of images" ngbSlide class="slide">
         <div class="picsum-img-wrapper">
-          <img class="img" [src]="img.src" alt="Random first slide">
+          <a  [routerLink]="[img.router]"><img  class="img" [src]="img.src" alt="Random first slide"></a>
         </div>
         <div class="carousel-caption">
           <h3>{{img.nome}}</h3>
@@ -24,7 +24,7 @@
   <ngb-carousel  class="carousel">
       <ng-template  *ngFor="let sale of onsale" ngbSlide class="slide">
         <div class="picsum-img-wrapper">
-          <img class="img" [src]="sale.src" alt="Random first slide">
+          <a  [routerLink]="[sale.router]"><img  class="img" [src]="sale.src" alt="Random first slide"></a>
         </div>
         <div class="carousel-caption">
           <h3>{{sale.nome}}</h3>
@@ -41,7 +41,7 @@
   <ngb-carousel  class="carousel">
       <ng-template  *ngFor="let specials of special" ngbSlide class="slide">
         <div class="picsum-img-wrapper">
-          <img class="img" [src]="specials.src" alt="Random first slide">
+          <a  [routerLink]="[specials.router]"><img  class="img" [src]="specials.src" alt="Random first slide"></a>
         </div>
         <div class="carousel-caption">
           <h3>{{specials.nome}}</h3>

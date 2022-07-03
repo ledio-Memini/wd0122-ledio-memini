@@ -13,29 +13,29 @@
     <li ngbDropdown class="nav-item m-4">
       <a href (click)="false" class="nav-link" ngbDropdownToggle>lusso</a>
       <div ngbDropdownMenu class="tendina">
-        <button ngbDropdownItem>Rolls-Royce </button>
-        <button ngbDropdownItem>Bentley </button>
-        <button ngbDropdownItem>Maybach </button>
-        <button ngbDropdownItem>Mansory </button>
+        <a [routerLink]="['/rolls']"><button ngbDropdownItem>Rolls-Royce </button></a>
+        <a [routerLink]="['/bentley']"><button ngbDropdownItem>Bentley </button></a>
+        <a [routerLink]="['/maybach']"><button ngbDropdownItem>Maybach </button></a>
+        <a [routerLink]="['/mansory']"><button ngbDropdownItem>Mansory </button></a>
       </div>
     </li>
     <li ngbDropdown class="nav-item m-4">
       <a href (click)="false" class="nav-link" ngbDropdownToggle>sportive</a>
       <div ngbDropdownMenu class="tendina">
-        <button ngbDropdownItem>Lamborghini</button>
-        <button ngbDropdownItem>Ferrari </button> 
-        <button ngbDropdownItem>Bugatti </button>
-        <button ngbDropdownItem>Porsche </button>
-        <button ngbDropdownItem>Maserati </button>
+        <a [routerLink]="['/lamborghini']"><button ngbDropdownItem>Lamborghini</button></a>
+        <a [routerLink]="['/ferrari']"><button ngbDropdownItem>Ferrari </button> </a>
+        <a [routerLink]="['/bugatti']"><button ngbDropdownItem>Bugatti </button></a>
+        <a [routerLink]="['/porsche']"><button ngbDropdownItem>Porsche </button></a>
+        <a [routerLink]="['/maserati']"><button ngbDropdownItem>Maserati </button></a>
       </div>
     </li>
     
     <li ngbDropdown class="ms-auto nav-item m-3" >
       <a href (click)="false" class="nav-link" ngbDropdownToggle><img src="../../assets/icone/account.jpg"></a>
       <div ngbDropdownMenu class="tendina">
-        <a [routerLink]="['/login']"><button ngbDropdownItem>login</button></a>
+        <a [routerLink]="['/login']"><button ngbDropdownItem (click)="visible = true">login</button></a>
         <a [routerLink]="['/register']"><button ngbDropdownItem>register</button></a>
-        <a > <button ngbDropdownItem (click)="logout()">logout</button></a>
+        <a > <button ngbDropdownItem *ngIf="visible" (click)="logout()">logout</button></a>
       </div>
     </li>
 

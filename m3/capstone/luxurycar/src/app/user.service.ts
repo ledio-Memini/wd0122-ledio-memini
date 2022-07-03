@@ -10,8 +10,7 @@ export class UserService {
   
   apiUrlRegister:string = 'http://localhost:4201/register';
   apiUrl:string = 'http://localhost:4201/users';
-  apimovie:string = 'https://localhost:4201/api/album/popular'
-  apiposts = "http://localhost:4201/posts"
+  apicar = "http://localhost:4201/car"
 
   registerUser(user:any) {
     return this.http.post(this.apiUrlRegister, user)
@@ -23,4 +22,10 @@ export class UserService {
   datiUtente(datiutente:any){
     return this.http.get(this.apiUrl, datiutente)
   }
+
+  getcar(marca:string){
+    return this.http.get(this.apicar + '?marca=' + marca)
+  }
+
+
 }

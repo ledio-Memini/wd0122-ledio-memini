@@ -1,0 +1,48 @@
+.card{
+    margin: 30px auto;
+    position: relative;
+    width:70%;
+    height:auto;
+    text-align: center;
+    overflow:hidden;
+
+}
+
+h2{
+    padding:10px 0 ;
+}
+.effetto{
+    position: relative;
+    overflow:hidden;
+}
+.effetto img {
+        width: 100%;
+        display: block;
+        -moz-transition:800ms;
+        -webkit-transition: 800ms; 
+        -o-transition: 800ms; 
+        transition: 800ms;
+}
+.effetto figcaption {
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: .5rem;
+    position: absolute;
+    -webkit-transition: 800ms; 
+    -o-transition: 800ms; 
+    transition: 800ms;
+    width: 100%;
+    cursor: pointer;
+}
+.effetto[data-effect="fade-in"] figcaption {
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+.effetto[data-effect="fade-in"]:hover figcaption {opacity: 1; transform: scale(1.5)}
+p{
+    margin-top:30%;
+    font-size: 2rem;
+}
+

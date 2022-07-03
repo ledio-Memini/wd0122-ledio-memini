@@ -1,0 +1,19 @@
+export interface Icar {
+          marca:string
+          modello:string
+          colore:string
+          prezzo:string
+          garanzia:number
+          alimentazione:string
+          cilindrata:number
+          potenza:string
+          trazione:string
+          cambio:string
+          porte:number
+          posti:number
+          img1:string
+          img2:string
+          img3:string
+          img4:string
+          img5:string
+}

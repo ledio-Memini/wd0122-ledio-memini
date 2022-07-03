@@ -10,6 +10,7 @@ export class AuthService {
 
   apiUrl:string = 'http://localhost:4201/login';
 
+  
   login(authData:any) {
     return this.http.post(this.apiUrl, authData);
   }

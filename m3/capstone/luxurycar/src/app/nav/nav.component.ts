@@ -14,11 +14,11 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
-
+  visible:boolean = false
 
   logout(){
     this.authService.logout();
+    this.visible = false
     Swal.fire({
       position: 'top-end',
       icon: 'success',

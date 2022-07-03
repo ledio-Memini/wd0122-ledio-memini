@@ -26,6 +26,7 @@ export class LoginComponent implements OnInit {
       this.auth.logUser(res.accessToken)
       this.router.navigate(['/'])
 
+
       Swal.fire({
         position: 'center',
         icon: 'success',
