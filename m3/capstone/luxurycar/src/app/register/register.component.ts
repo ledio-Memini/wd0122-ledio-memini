@@ -18,7 +18,8 @@ export class RegisterComponent implements OnInit {
     nome: '',
     cognome:'',
     email : '',
-    password : ''
+    password : '',
+    number : '+39 '
   }
 
   register(){

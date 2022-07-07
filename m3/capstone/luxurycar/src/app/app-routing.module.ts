@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DettagliComponent } from './dettagli/dettagli.component';
 
 const routes: Routes = [
   { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'bugatti', loadChildren: () => import('./bugatti/bugatti.module').then(m => m.BugattiModule) },
   { path: 'porsche', loadChildren: () => import('./porsche/porsche.module').then(m => m.PorscheModule) },
   { path: 'maserati', loadChildren: () => import('./maserati/maserati.module').then(m => m.MaseratiModule) },
+  {path: 'dettagli' , component:DettagliComponent}
 
 
 ]

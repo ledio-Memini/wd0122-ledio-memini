@@ -16,6 +16,8 @@ export class MansoryComponent implements OnInit {
   ngOnInit(): void {
     this.getmarca()
   }
+
+  changeText:boolean = false
   
   getmarca(){
     this.userService.getcar(this.marca)

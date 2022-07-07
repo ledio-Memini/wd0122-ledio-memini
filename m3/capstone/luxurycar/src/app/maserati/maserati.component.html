@@ -1,8 +1,31 @@
-<div *ngFor="let car of cars">
-    <div class="card">
-    <h2>{{car.marca}}-{{car.modello}}</h2>
-    <p>prezzo: {{car.prezzo}}€</p>
-    <img src="{{car.img1}}" alt="">
-    </div>
+<div class="container">
+    <div class="row">
 
+        <img id="logo" class="marchio" src="../../assets/marchi/maserati.jpg" alt="">
+        
+    </div>
+<div class="color">
+<h3>coming soon</h3>
+<h4>Nuova Maserati MC20 Cielo Global Premiere</h4>
+<h4>limited edition 1/48</h4>
+
+
+<img class="home" src="../../assets/car/maserati/maserati.jpg" alt="">
+</div>
+
+
+</div>
+
+<h5>Maserati disponibili nell'autosalone</h5>
+
+<div class="card" *ngFor="let car of cars" >
+    <h2>{{car.marca}}-{{car.modello}}</h2>
+    <span>prezzo: {{car.prezzo}}€</span>
+
+    <div data-effect="fade-in" class="effetto">
+    <img src="{{car.img1}}" alt="" />
+    <a [routerLink]="['/dettagli']"><figcaption>
+        <p>clicca per maggiori dettagli</p>
+        </figcaption></a>
+    </div>
 </div>

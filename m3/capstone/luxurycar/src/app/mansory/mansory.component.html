@@ -1,8 +1,34 @@
-<div *ngFor="let car of cars">
-    <div class="card">
-    <h2>{{car.marca}}-{{car.modello}}</h2>
-    <p>prezzo: {{car.prezzo}}€</p>
-    <img src="{{car.img1}}" alt="">
-    </div>
+<div class="container">
+    <div class="row">
 
+         <img id="logo" class="marchio" src="../../assets/marchi/mansory.jpg" alt="">
+        
+</div>
+  <div id="dad">
+    <img id="figlio" src="../../assets/car/mansory/home.jpg" (click)="changeText=false" (mouseover)="changeText=true" (mouseout)="changeText=false"  data-bs-toggle="collapse" href="#collapseExample"  aria-expanded="false" aria-controls="collapseExample">
+    <h4 *ngIf="changeText">clicca sull'immagine </h4>
+  </div>
+  <div class="collapse" id="collapseExample">
+
+        <h1>MANSORY - more than tradition, more than racing</h1>
+        <p>British luxury cars and their special style have always been the passion of Kourosh Mansory, the owner and namesake of MANSORY. This enthusiasm made him spend many years in England and personally commit himself to automobile values such as tradition, craftsmanship and well-engineered technology. Already when the company was founded in 1989, special attention was therefore given to the brands Rolls Royce, Bentley, Aston Martin and Ferrari. In mid 2001, the company moved from Munich to Fichtelgebirge. At its new location in Brand in the vicinity of Bayreuth which is famous for its Wagner Festival, the skilled team produces high-end tuning in all disciplines of individual automobile manufacturing. By taking over the business division Porsche-Tuning from Swiss Rinspeed AG in November 2007, MANSORY additionally extended its product portfolio. The main focus is developing and selling a tuning and accessory programme for Porsche, BMW & Range Rover automobiles on an international basis.
+
+            Production on the highest technical level combined with masterful craftsmanship and most precious materials – this is the quality standard of the MANSORY corporation. Harmonically designed aerodynamics programmes, ultra-light aluminium rims and powerful engine performance enhancements are the foundation of the MANSORY technology programme. High-quality accessories and stylish interior fittings complete the assortment. Whether dynamically striking or extravagant and noble, MANSORY interiors render comfort and confidence.
+            
+            MANSORY Design & Holding GmbH solely offers its proprietary developed modification accessories. Today MANSORY employs more than 200 members of staff and fulfils nearly every automobile dream of its exclusive clientele. In Germany, Switzerland and via selected sales partners all over the world.</p> 
+
+  </div>
+
+<h5>Mansory disponibili nell'autosalone</h5>
+
+<div class="card" *ngFor="let car of cars" >
+    <h2>{{car.marca}}-{{car.modello}}</h2>
+    <span>prezzo: {{car.prezzo}}€</span>
+
+    <div data-effect="fade-in" class="effetto">
+    <img src="{{car.img1}}" alt="" />
+    <a [routerLink]="['/dettagli']"><figcaption>
+      <p>clicca per maggiori dettagli</p>
+      </figcaption></a>
+    </div>
 </div>

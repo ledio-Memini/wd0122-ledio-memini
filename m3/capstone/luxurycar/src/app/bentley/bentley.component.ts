@@ -11,6 +11,7 @@ export class BentleyComponent implements OnInit {
 
   constructor(private userService: UserService, private httpclient: HttpClient) { }
   
+
   marca:string = "Bentley"
   cars:any = []
   ngOnInit(): void {
@@ -23,6 +24,7 @@ export class BentleyComponent implements OnInit {
       this.cars = res
     })
   }
+  
   
 
 }

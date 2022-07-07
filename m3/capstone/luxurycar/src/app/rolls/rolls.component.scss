@@ -1,11 +1,60 @@
+.container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+h1{
+    font-size: 6rem;
+}
+.marchio{
+    height: 200px;
+}
+h3{
+    margin-top:50px;
+    font-size:2.5rem;
+    color:rgb(132, 6, 6);
+    padding:20px;
+}
+h4{
+    padding:20px;
+}
+
+
+
+h5{
+    text-align: center;
+    font-size: 3rem;
+    padding-top:100px;
+}
+
 .card{
-    margin: 30px auto;
+    margin: 100px auto;
     position: relative;
     width:70%;
     height:auto;
     text-align: center;
     overflow:hidden;
+    --angle: 0deg;
+    border: 2vmin solid;
+	border-image: conic-gradient(from var(--angle),red,black,red,black,red) 1;
+	
+	animation: 10s rotate linear infinite;
+}
+span{
+    font-size:2rem;
+}
 
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+.card:hover{
+    box-shadow:10px 10px 20px grey;
 }
 
 h2{

@@ -18,6 +18,10 @@
                 <span class="fa fa-user"></span>
                 <input type="password" required class="pass-key" [(ngModel)]="authData.password" name="password" placeholder="password">
             </div>
+            <div class="field space">
+                <span class="fa fa-user"></span>
+                <input type="text" required  [(ngModel)]="authData.number" name="number" placeholder="telefono">
+            </div>
 
 
                 <button id=login class="btn btn-success" (click)="register()">register</button>

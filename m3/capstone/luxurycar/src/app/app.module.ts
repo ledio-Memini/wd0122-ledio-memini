@@ -8,6 +8,7 @@ import { AuthInterceptor } from './auth.interceptor';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
 import { NavComponent } from './nav/nav.component';
+import { DettagliComponent } from './dettagli/dettagli.component';
 
 
 
@@ -16,6 +17,7 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     FooterComponent,
     NavComponent,
+    DettagliComponent,
 
   ],
   imports: [

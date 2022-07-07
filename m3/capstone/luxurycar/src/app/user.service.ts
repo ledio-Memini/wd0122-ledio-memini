@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Icar } from './icar';
 
 @Injectable({
   providedIn: 'root'
@@ -25,6 +26,9 @@ export class UserService {
 
   getcar(marca:string){
     return this.http.get(this.apicar + '?marca=' + marca)
+  }
+  getmodello(id:number){
+    return this.http.get(this.apicar + '/' + id)
   }
 
 

@@ -1,8 +1,33 @@
-<div *ngFor="let car of cars">
-    <div class="card">
-    <h2>{{car.marca}}-{{car.modello}}</h2>
-    <p>prezzo: {{car.prezzo}}€</p>
-    <img src="{{car.img1}}" alt="">
-    </div>
+<div class="container">
+    <div class="row">
 
+        <h1>Lamborghini  <img class="marchio" src="../../assets/marchi/lamborghini.jpg" alt=""></h1>
+        
 </div>
+
+<h3>coming soon</h3>
+<h4>HURACAN TECNICA</h4>
+
+
+<img class="home" src="../../assets/car/lamborghini/tecnica.jpg" alt="">
+
+<h4>ON ROAD</h4>
+
+<iframe width="100%" height="800px" src="https://www.youtube.com/embed/bStQfHFODKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
+<h5>Lamborghini disponibili nell'autosalone</h5>
+
+<div class="card" *ngFor="let car of cars" >
+    <h2>{{car.marca}}-{{car.modello}}</h2>
+    <span>prezzo: {{car.prezzo}}€</span>
+
+    <div data-effect="fade-in" class="effetto">
+    <img src="{{car.img1}}" alt="" />
+    <a [routerLink]="['/dettagli']"><figcaption>
+        <p>clicca per maggiori dettagli</p>
+        </figcaption></a>
+    </div>
+</div>
+

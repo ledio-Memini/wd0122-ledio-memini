@@ -1,11 +1,122 @@
+.container {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.marchio{
+    height: 400px;
+}
+#logo{
+    width: 700px;
+    margin:auto
+}
+h3{
+    margin-top:50px;
+    font-size:2.5rem;
+    color: #ffc000;
+    padding:20px;
+}
+h4{
+    padding:20px;
+}
+.home{
+    width:100%;
+}
+.color{
+    background-color: #091021;
+    border-radius: 20px 20px 0 0;
+}
+button{
+    font-size: 2rem;
+    margin:20px;
+    border: none;
+    padding: 15px;
+    background-color: #ffc000;
+    border-radius:10px;
+
+}
+button:hover{
+    transition: 0.5s;
+    transform: scale(1.25);
+    box-shadow:0 0 5px #ffc000,
+    0 0 20px #ffc000,
+    0 0 60px #ffc000,
+    0 0 150px #ffc000,
+    0 0 300px #ffc000;
+}
+
+h5{
+    text-align: center;
+    font-size: 3rem;
+    padding-top:100px;
+}
+
+
 .card{
-    margin: 30px auto;
+    margin: 100px auto;
     position: relative;
     width:70%;
-    height:90vh;
+    height:auto;
     text-align: center;
     overflow:hidden;
+    --angle: 0deg;
+    border: 2vmin solid;
+	border-image: conic-gradient(from var(--angle),red,black,red,black,red) 1;
+	
+	animation: 10s rotate linear infinite;
 }
+span{
+    font-size:2rem;
+}
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+.card:hover{
+    box-shadow:10px 10px 20px grey;
+}
+
 h2{
     padding:10px 0 ;
+}
+.effetto{
+    position: relative;
+    overflow:hidden;
+}
+.effetto img {
+        width: 100%;
+        display: block;
+        -moz-transition:800ms;
+        -webkit-transition: 800ms; 
+        -o-transition: 800ms; 
+        transition: 800ms;
+}
+.effetto figcaption {
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: .5rem;
+    position: absolute;
+    -webkit-transition: 800ms; 
+    -o-transition: 800ms; 
+    transition: 800ms;
+    width: 100%;
+    cursor: pointer;
+}
+.effetto[data-effect="fade-in"] figcaption {
+    top: 0;
+    left: 0;
+    height: 100%;
+    opacity: 0;
+}
+.effetto[data-effect="fade-in"]:hover figcaption {opacity: 1; transform: scale(1.5)}
+p{
+    margin-top:30%;
+    font-size: 2rem;
 }

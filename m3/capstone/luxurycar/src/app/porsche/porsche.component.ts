@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 import { UserService } from '../user.service';
 
 @Component({
@@ -21,6 +22,16 @@ export class PorscheComponent implements OnInit {
     this.userService.getcar(this.marca)
     .subscribe(res => {
       this.cars = res
+    })
+  }
+  contatto(){
+    
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'la tua richiesta e stata inviata. un nostro agente la contatterà entro 10 minuti',
+      showConfirmButton: false,
+      timer: 4000
     })
   }
 

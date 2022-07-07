@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BentleyRoutingModule } from './bentley-routing.module';
 import { BentleyComponent } from './bentley.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BentleyComponent } from './bentley.component';
   ],
   imports: [
     CommonModule,
-    BentleyRoutingModule
+    BentleyRoutingModule,
+    NgbModule
   ]
 })
 export class BentleyModule { }

@@ -49,6 +49,7 @@
     
 
         {
+          "id": 1,
           "marca": "Rolls-Royce",
           "modello": "Phantom",
           "colore": "nero-verde",
@@ -68,6 +69,7 @@
           "img5":"assets/car/rolls/phantom/5.jpg"
         },
         {
+          "id": 2,
           "marca": "Rolls-Royce",
           "modello": "Ghost",
           "colore": "bianco",
@@ -87,6 +89,7 @@
           "img5":"assets/car/rolls/ghost/5.jpg"
         },
         {
+          "id": 3,
           "marca": "Rolls-Royce",
           "modello": "Cullinan",
           "colore": "grigio",
@@ -110,6 +113,7 @@
     
 
         {
+          "id": 4,
           "marca": "Bentley",
           "modello": "continental gt",
           "colore": "grigio",
@@ -129,6 +133,7 @@
           "img5":"assets/car/bentley/gt-s/5.jpg"
         },
         {
+          "id": 5,
           "marca": "Bentley",
           "modello": "Bentayga",
           "colore": "grigio",
@@ -148,6 +153,7 @@
           "img5":"assets/car/bentley/bentayga/5.jpg"
         },
         {
+          "id": 6,
           "marca": "Bentley",
           "modello": "Flying Spur",
           "colore": "grigio chiaro",
@@ -169,6 +175,7 @@
 
 
         {
+          "id": 7,
           "marca": "Maybach",
           "modello": "Mercedes classe S",
           "colore": "bordeux",
@@ -188,6 +195,7 @@
           "img5":"assets/car/maybach/classe-s/5.jpg"
         },
         {
+          "id": 8,
           "marca": "Maybach",
           "modello": "Mercedes classe GLS",
           "colore": "nero",
@@ -208,10 +216,11 @@
         },
 
         {
+          "id": 9,
           "marca": "Mansory",
           "modello": "Lamborghini Urus",
           "colore": "nero",
-          "prezzo": "4500.000",
+          "prezzo": "450.000",
           "garanzia": 1,
           "alimentazione":"benzina",
           "cilindrata": 8000,
@@ -227,6 +236,7 @@
           "img5":"assets/car/mansory/urus/5.jpg"
         },
         {
+          "id": 10,
           "marca": "Mansory",
           "modello": "Maserati Granturismo",
           "colore": "rosso",
@@ -247,6 +257,7 @@
         },
 
         {
+          "id": 11,
           "marca": "Lamborghini",
           "modello": "Aventador",
           "colore": "blu",
@@ -266,6 +277,7 @@
           "img5":"assets/car/lamborghini/aventador/5.jpg"
         },
         {
+          "id": 12,
           "marca": "Lamborghini",
           "modello": "Centenario",
           "colore": "grigio",
@@ -285,6 +297,7 @@
           "img5":"assets/car/lamborghini/centenario/5.jpg"
         },
         {
+          "id": 13,
           "marca": "Lamborghini",
           "modello": "Huracan",
           "colore": "arancione",
@@ -305,6 +318,7 @@
         },
 
         {
+          "id": 14,
           "marca": "Ferrari",
           "modello": "Laferrari",
           "colore": "rosso",
@@ -324,6 +338,7 @@
           "img5":"assets/car/ferrari/laferrari/5.jpg"
         },
         {
+          "id": 15,
           "marca": "Ferrari",
           "modello": "Portofino",
           "colore": "rosso",
@@ -343,6 +358,7 @@
           "img5":"assets/car/ferrari/portofino/5.jpg"
         },
         {
+          "id": 16,
           "marca": "Ferrari",
           "modello": "Roma",
           "colore": "grigio",
@@ -363,6 +379,7 @@
         },
 
         {
+          "id": 17,
           "marca": "Bugatti",
           "modello": "Centodieci",
           "colore": "bianco",
@@ -382,6 +399,7 @@
           "img5":"assets/car/bugatti/centodieci/5.jpg"
         },
         {
+          "id": 18,
           "marca": "Bugatti",
           "modello": "Chiron",
           "colore": "rosso nero",
@@ -401,6 +419,7 @@
           "img5":"assets/car/bugatti/chiron/5.jpg"
         },
         {
+          "id": 19,
           "marca": "Bugatti",
           "modello": "Divo",
           "colore": "grigio",
@@ -421,6 +440,7 @@
         },
 
         {
+          "id": 20,
           "marca": "Porsche",
           "modello": "Cayenne",
           "colore": "nero",
@@ -440,6 +460,7 @@
           "img5":"assets/car/porsche/cayenne/5.jpg"
         },
         {
+          "id": 21,
           "marca": "Porsche",
           "modello": "Panamera",
           "colore": "grigio",
@@ -459,6 +480,7 @@
           "img5":"assets/car/porsche/panamera/5.jpg"
         },
         {
+          "id": 22,
           "marca": "Porsche",
           "modello": "Taycan",
           "colore": "bianco",
@@ -479,6 +501,7 @@
         },
 
         {
+          "id": 23,
           "marca": "Maserati",
           "modello": "Levante",
           "colore": "grigio",
@@ -498,6 +521,7 @@
           "img5":"assets/car/maserati/levante/5.jpg"
         },
         {
+          "id": 24,
           "marca": "Maserati",
           "modello": "MC20",
           "colore": "bianco",
@@ -517,6 +541,7 @@
           "img5":"assets/car/maserati/mc20/5.jpg"
         },
         {
+          "id": 25,
           "marca": "Maserati",
           "modello": "Ghibli",
           "colore": "blu",
