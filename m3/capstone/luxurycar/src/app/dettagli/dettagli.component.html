@@ -1,1 +1,86 @@
-<p>dettagli works!</p>
+
+
+
+<div class="container">
+    <h1>{{car.marca}}-{{car.modello}}</h1>
+    <hr>
+<ngb-carousel *ngIf="car.img1">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="car.img1" alt="Random first slide">
+      </div>
+
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="car.img2" alt="Random second slide">
+      </div>
+
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="car.img3" alt="Random third slide">
+      </div>
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="car.img4" alt="Random third slide">
+      </div>
+
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img [src]="car.img5" alt="Random third slide">
+      </div>
+
+    </ng-template>
+  </ngb-carousel>
+  <h2>prezzo: {{car.prezzo}}€</h2>
+
+  <div *ngIf="visible" id="power" class="container">
+    <h3>power</h3>
+    <h6>cilindrata: {{car.cilindrata}}</h6>
+    <ngb-progressbar class="bar" type="primary" [value]="car.cilindrata/100"></ngb-progressbar>
+    <h6>potenza: {{car.potenza}} KW</h6>
+    <ngb-progressbar class="bar" type="primary" [value]="car.potenza/10">    <h6 *ngIf="car.potenza > 1000">superato il limite di potenza</h6></ngb-progressbar>
+    <h6>cavalli: {{car.cavalli}} CV</h6>
+    <ngb-progressbar class="bar" type="primary" [value]="car.cavalli/10">    <h6 *ngIf="car.cavalli > 1000">superato il limite di potenza</h6></ngb-progressbar>
+
+  </div>
+
+  <div *ngIf="visible" id="dettagli" class="container">
+    <h3> dettagli </h3>
+    <div class="row">
+        <div class="col-6"><p>colore:</p></div>
+        <div class="col-6"><p>{{car.colore}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>garanzia:</p></div>
+        <div class="col-6"><p>{{car.garanzia}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>alimentazione:</p></div>
+        <div class="col-6"><p>{{car.alimentazione}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>trazione:</p></div>
+        <div class="col-6"><p>{{car.trazione}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>cambio:</p></div>
+        <div class="col-6"><p>{{car.cambio}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>porte:</p></div>
+        <div class="col-6"><p>{{car.porte}}</p></div>
+    </div>
+    <div class="row">
+        <div class="col-6"><p>posti:</p></div>
+        <div class="col-6"><p>{{car.posti}}</p></div>
+    </div>
+  </div>
+</div>
+        

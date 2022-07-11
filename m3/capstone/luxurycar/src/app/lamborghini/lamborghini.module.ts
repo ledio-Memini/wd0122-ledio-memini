@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LamborghiniRoutingModule } from './lamborghini-routing.module';
 import { LamborghiniComponent } from './lamborghini.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { LamborghiniComponent } from './lamborghini.component';
   ],
   imports: [
     CommonModule,
-    LamborghiniRoutingModule
+    LamborghiniRoutingModule,
+    NgbModule
   ]
 })
 export class LamborghiniModule { }

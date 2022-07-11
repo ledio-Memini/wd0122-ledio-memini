@@ -27,8 +27,9 @@ export class UserService {
   getcar(marca:string){
     return this.http.get(this.apicar + '?marca=' + marca)
   }
+
   getmodello(id:number){
-    return this.http.get(this.apicar + '/' + id)
+    return this.http.get<Icar>(this.apicar + '/' + id)
   }
 
 

@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'bugatti', loadChildren: () => import('./bugatti/bugatti.module').then(m => m.BugattiModule) },
   { path: 'porsche', loadChildren: () => import('./porsche/porsche.module').then(m => m.PorscheModule) },
   { path: 'maserati', loadChildren: () => import('./maserati/maserati.module').then(m => m.MaseratiModule) },
-  {path: 'dettagli' , component:DettagliComponent}
+  {path: 'dettagli/:id' , component:DettagliComponent}
 
 
 ]

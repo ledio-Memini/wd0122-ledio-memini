@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { BugattiRoutingModule } from './bugatti-routing.module';
 import { BugattiComponent } from './bugatti.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { BugattiComponent } from './bugatti.component';
   ],
   imports: [
     CommonModule,
-    BugattiRoutingModule
+    BugattiRoutingModule,
+    NgbModule
   ]
 })
 export class BugattiModule { }
