@@ -8,6 +8,7 @@ a{
     margin: 10px;
 
 }
+
 .tendina{
     width: 400px;
     height:auto;
@@ -43,5 +44,30 @@ ul{
 .nav-link img{
     height:50px;
     width:50px;
+}
+
+#nav2{
+    display:none
+}
+//responsive
+
+@media screen and (max-width:760px){
+    #nav2{
+        display: flex
+    }
+    .drop{
+        width:100px;
+    }
+    #home{
+        text-align: left;
+        margin:0px;
+    }
+    #azienda{
+        padding-top: 0px;
+        font-size: 2rem;
+    }
+    #nav1{
+        display:none
+    }
 }
 

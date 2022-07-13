@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-azienda',
@@ -11,6 +12,7 @@ export class AziendaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  currentRate = 9.4;
 
   staffs = [
     {
@@ -42,5 +44,16 @@ export class AziendaComponent implements OnInit {
   
     },
   ]
+
+  commento(){
+    
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Grazie per la recensione',
+      showConfirmButton: false,
+      timer: 2000
+    })
+  }
 
 }

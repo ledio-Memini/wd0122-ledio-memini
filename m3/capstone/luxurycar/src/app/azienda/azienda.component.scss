@@ -1,17 +1,10 @@
-.azienda{
 
-}
 
 #dove{
     background-image: url(../../assets/staff/dove.jpg);
     height: 65vh;
     background-size: contain;
     background-repeat: no-repeat;
-    h2{
-        margin-top:10px;
-        padding: 0;
-        color: #1c5998;
-    }
 
 }
 .col-4 {
@@ -55,4 +48,46 @@ img{
     height: 200px;
     width: 250px;
     padding: 20px;
+}
+.star {
+    font-size: 1.5rem;
+    color: #b0c4de;
+  }
+  .filled {
+    color: #1e90ff;
+  }
+  .bad {
+    color: #deb0b0;
+  }
+  .filled.bad {
+    color: #ff1e1e;
+  }
+  input{
+    width:auto;
+    height:100px;
+  }
+  .commento{
+    text-align: center;
+  }
+
+//responsive
+
+@media screen and (max-width: 760px) {
+    .row{
+        display:inline;
+        .col-4{
+            margin:auto 35%
+        }
+        .col-3{
+            margin:20px 20%;
+        }
+        .marchi{
+            margin:20px 22%;
+        }
+
+
+    }
+    #dove{
+        height:30vh;
+    }
 }

@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
       nome:'Lamborghini Urus Mansory',
       prezzo: '450.000', 
       src: 'assets/special/lamborghinispecial.jpg',
-      router: '/lamborghini'
+      router: '/mansory'
     },
     {
       nome:'Bugatti Divo',

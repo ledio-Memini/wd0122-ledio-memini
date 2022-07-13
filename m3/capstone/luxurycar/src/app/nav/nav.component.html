@@ -1,5 +1,5 @@
 
-<ul ngbNav #nav="ngbNav" [activeId]="2" class="nav-tabs justify-content-center">
+<ul ngbNav #nav="ngbNav" id="nav1" [activeId]="2" class="nav-tabs justify-content-center">
     <li class="nav-item">
       <div id="home" class="m-3">
       <a [routerLink]="['/']">HOME</a>
@@ -7,11 +7,11 @@
     </li>
     
     <li id="azienda" class="nav-item m-4">
-      <a [routerLink]="['/azienda']">azienda</a>
+      <a [routerLink]="['/azienda']">Azienda</a>
     </li>
 
     <li ngbDropdown class="nav-item m-4">
-      <a href (click)="false" class="nav-link" ngbDropdownToggle>lusso</a>
+      <a href (click)="false" class="nav-link " ngbDropdownToggle>Lusso</a>
       <div ngbDropdownMenu class="tendina">
         <a [routerLink]="['/rolls']"><button ngbDropdownItem>Rolls-Royce </button></a>
         <a [routerLink]="['/bentley']"><button ngbDropdownItem>Bentley </button></a>
@@ -19,8 +19,8 @@
         <a [routerLink]="['/mansory']"><button ngbDropdownItem>Mansory </button></a>
       </div>
     </li>
-    <li ngbDropdown class="nav-item m-4">
-      <a href (click)="false" class="nav-link" ngbDropdownToggle>sportive</a>
+    <li ngbDropdown class="nav-item m-4 ">
+      <a href (click)="false" class="nav-link" ngbDropdownToggle>Sportive</a>
       <div ngbDropdownMenu class="tendina">
         <a [routerLink]="['/lamborghini']"><button ngbDropdownItem>Lamborghini</button></a>
         <a [routerLink]="['/ferrari']"><button ngbDropdownItem>Ferrari </button> </a>
@@ -40,3 +40,55 @@
     </li>
 
   </ul>
+
+
+  
+<ul ngbNav #nav="ngbNav" id="nav2" [activeId]="2" class="nav-tabs justify-content-center">
+
+  <li ngbDropdown class="nav-item m-4">
+    <a href (click)="false" class="nav-link" ngbDropdownToggle> <img src="../../assets/staff/menu.jpg" ></a>
+    <div ngbDropdownMenu class="tendina">
+
+  <li class="nav-item">
+    <div id="home" class="m-3">
+    <a [routerLink]="['/']">HOME</a>
+    </div>
+  </li>
+  
+  <li id="azienda" class="nav-item m-4">
+    <a [routerLink]="['/azienda']">Azienda</a>
+  </li>
+
+  <li ngbDropdown class="nav-item m-4 drop">
+    <a href (click)="false" class="nav-link" ngbDropdownToggle>Lusso</a>
+    <div ngbDropdownMenu class="tendina">
+      <a [routerLink]="['/rolls']"><button ngbDropdownItem>Rolls-Royce </button></a>
+      <a [routerLink]="['/bentley']"><button ngbDropdownItem>Bentley </button></a>
+      <a [routerLink]="['/maybach']"><button ngbDropdownItem>Maybach </button></a>
+      <a [routerLink]="['/mansory']"><button ngbDropdownItem>Mansory </button></a>
+    </div>
+  </li>
+  <li ngbDropdown class="nav-item m-4 drop">
+    <a href (click)="false" class="nav-link" ngbDropdownToggle>Sportive</a>
+    <div ngbDropdownMenu class="tendina">
+      <a [routerLink]="['/lamborghini']"><button ngbDropdownItem>Lamborghini</button></a>
+      <a [routerLink]="['/ferrari']"><button ngbDropdownItem>Ferrari </button> </a>
+      <a [routerLink]="['/bugatti']"><button ngbDropdownItem>Bugatti </button></a>
+      <a [routerLink]="['/porsche']"><button ngbDropdownItem>Porsche </button></a>
+      <a [routerLink]="['/maserati']"><button ngbDropdownItem>Maserati </button></a>
+    </div>
+  </li>
+</div>
+</li>
+  
+  <li ngbDropdown class="ms-auto nav-item m-3" >
+    <a href (click)="false" class="nav-link" ngbDropdownToggle><img src="../../assets/icone/account.jpg"></a>
+    <div ngbDropdownMenu class="tendina">
+      <a [routerLink]="['/login']"><button ngbDropdownItem (click)="visible = true">login</button></a>
+      <a [routerLink]="['/register']"><button ngbDropdownItem>register</button></a>
+      <a > <button ngbDropdownItem *ngIf="visible" (click)="logout()">logout</button></a>
+    </div>
+  </li>
+
+
+</ul>

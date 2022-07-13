@@ -46,15 +46,29 @@
 
     <div><h2>Marchi trattati</h2></div>
     <div class="row">
-        <img src="../../assets/marchi/bentley.jpg">
-        <img src="../../assets/marchi/maybach.jpg">
-        <img src="../../assets/marchi/mansory.jpg">
-        <img src="../../assets/marchi/maserati.jpg">
-        <img src="../../assets/marchi/lamborghini.jpg">
-        <img src="../../assets/marchi/ferrari.jpg">
-        <img src="../../assets/marchi/bugatti.jpg">
-        <img src="../../assets/marchi/porsche.jpg">
-        <img src="../../assets/marchi/rolls.jpg">
+        <img class="marchi" src="../../assets/marchi/bentley.jpg">
+        <img class="marchi" src="../../assets/marchi/maybach.jpg">
+        <img class="marchi" src="../../assets/marchi/mansory.jpg">
+        <img class="marchi" src="../../assets/marchi/maserati.jpg">
+        <img class="marchi" src="../../assets/marchi/lamborghini.jpg">
+        <img class="marchi" src="../../assets/marchi/ferrari.jpg">
+        <img class="marchi" src="../../assets/marchi/bugatti.jpg">
+        <img class="marchi" src="../../assets/marchi/porsche.jpg">
+        <img class="marchi" src="../../assets/marchi/rolls.jpg">
     </div>
 </div>
+</div>
+<div class="container">
+<div class="commento">
+    <h2>Valutazione</h2>
+    <ngb-rating [(rate)]="currentRate">
+        <ng-template let-fill="fill" let-index="index">
+        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+        </ng-template>
+    </ngb-rating>
+    <h3>lascia un commento</h3>
+    <p><textarea name="messaggio" rows="5" cols="50" placeholder="inserisci un commento..."></textarea></p>
+    <button class="btn btn-primary" (click)="commento()">invia</button>
+</div>
+
 </div>
