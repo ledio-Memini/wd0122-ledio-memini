@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { Icar } from '../icar';
 import { UserService } from '../user.service';
 
@@ -34,6 +35,15 @@ export class DettagliComponent implements OnInit {
     setTimeout(()=>{                           
       this.visible = true;
   }, 2000);
+  }
+
+  compra(){
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+      title: 'Acquisto eseguito con successo',
+      showConfirmButton: true,
+    })
   }
 
 }

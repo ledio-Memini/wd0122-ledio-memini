@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-size: 3rem;
+    padding:30px
+}
+.card{
+    width:500px;
+    height:auto;
+}
+img{
+    width: 100%;
+    height:400px
+}
+.card{
+    margin: 30px;
+    text-align: center;
+    background-color: rgb(177, 176, 176)
+}
+.card:hover{
+    cursor: pointer;
+    background-color:grey;
+    transform:scale(1.10);
+    transition: 0.5s
+}
+.flex-wrap{
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+

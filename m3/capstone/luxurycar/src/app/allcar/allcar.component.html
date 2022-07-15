@@ -1,0 +1,16 @@
+<h1>Il nostro parco auto</h1>
+
+<pagination-controls class="text-center" (pageChange)="page = $event"></pagination-controls>
+<div class="d-flex flex-wrap">
+    <div class="card" *ngFor="let alls of all | paginate: {itemsPerPage:10, currentPage: page }">
+        <a [routerLink]="['/dettagli',alls.id]">
+    <img class="float-left" src="{{alls.img1}}" alt="">
+    <h2>{{alls.marca}}-{{alls.modello}}</h2>
+    <p>Prezzo: {{alls.prezzo}}€</p>
+    </a>
+</div>
+</div>
+
+
+
+<pagination-controls class="text-center" (pageChange)="page = $event"></pagination-controls>

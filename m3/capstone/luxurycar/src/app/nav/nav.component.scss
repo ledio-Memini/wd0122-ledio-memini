@@ -50,6 +50,12 @@ ul{
     display:none
 }
 //responsive
+#azienda a:hover{
+    color:red
+}
+#home a:hover{
+    color:red
+}
 
 @media screen and (max-width:760px){
     #nav2{

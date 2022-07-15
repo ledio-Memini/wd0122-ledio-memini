@@ -32,5 +32,9 @@ export class UserService {
     return this.http.get<Icar>(this.apicar + '/' + id)
   }
 
+  getall(){
+    return this.http.get(this.apicar)
+  }
+
 
 }

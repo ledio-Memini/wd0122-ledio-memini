@@ -58,12 +58,13 @@
     </div>
 </div>
 </div>
+
 <div class="container">
 <div class="commento">
-    <h2>Valutazione</h2>
+    <h2>Recensione</h2>
     <ngb-rating [(rate)]="currentRate">
         <ng-template let-fill="fill" let-index="index">
-        <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
+            <span class="star" [class.filled]="fill === 100" [class.bad]="index < 3">&#9733;</span>
         </ng-template>
     </ngb-rating>
     <h3>lascia un commento</h3>
