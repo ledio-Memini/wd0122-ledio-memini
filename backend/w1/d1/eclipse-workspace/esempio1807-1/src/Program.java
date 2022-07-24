@@ -57,6 +57,7 @@ public class Program {
 		int n2 = 1;
 		System.out.println(n1++);
 		System.out.println(++n2);
+		
 	}
 	
 	static void funzione() {
