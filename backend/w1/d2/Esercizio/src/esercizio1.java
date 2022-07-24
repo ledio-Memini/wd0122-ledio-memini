@@ -23,6 +23,7 @@ public class esercizio1 {
 		System.out.println("*                                                                  *");
 		double larghezza2 = scanner.nextDouble();
 		
+		
 		Rettangolo rettangolo1 = new Rettangolo(lunghezza1, larghezza1);
 		System.out.println("Rettangolo 1");
 		stampaRettangolo(rettangolo1);

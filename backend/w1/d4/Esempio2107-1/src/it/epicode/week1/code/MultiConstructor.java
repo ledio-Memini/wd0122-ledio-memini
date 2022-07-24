@@ -18,4 +18,5 @@ public class MultiConstructor {
 		this(value1); // cross calling
 		accumulator += value2;
 	}
+	
 }

@@ -20,6 +20,7 @@ public class Cresente {
 		for (int i : arr) {
 			System.out.print(i + " ");
 		}
+		
 	}
 
 }
