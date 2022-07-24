@@ -1,0 +1,22 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		System.out.println("Second Line!");
+		
+		final int a = 3;
+		double b = 4.7;
+		int c = 3;
+		System.out.println("La variabile a vale " + a);
+		System.out.println("La variabile a vale " + b);
+		
+		b = c ;
+		System.out.println("b dopo l assegnazione a c, vale" + b);
+		
+		double d = 5.123;
+		c = (int) d;
+		System.out.println("la variabile c, dopo l assegnazione di d,vale" + c);
+	}
+
+}

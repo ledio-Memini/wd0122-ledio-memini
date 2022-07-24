@@ -1,0 +1,14 @@
+
+public class Program {
+
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		System.out.println("Second Line!");
+		
+		final int a = 3;
+		double b = 4.7;
+		System.out.println("La variabile a vale " + a);
+		System.out.println("La variabile a vale " + b);
+	}
+
+}

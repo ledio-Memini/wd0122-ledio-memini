@@ -1,0 +1,17 @@
+package it.epicode.be;
+
+public class esercizio3 {
+
+	public static double perimetroRettangolo(double a, double b) {
+		return a * b;
+	}
+	public static void main(String[] args) {
+		
+		double a = 5;
+		double b = 5.5;
+		System.out.println("perimetro rettangolo:");
+		System.out.println(perimetroRettangolo(a,b));
+
+	}
+
+}
