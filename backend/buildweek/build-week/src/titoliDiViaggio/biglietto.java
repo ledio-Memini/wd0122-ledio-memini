@@ -27,9 +27,9 @@ public class biglietto {
 	private String tratta;
 	
 	@Column(name = "convalida")
-	private String convalida;
+	private LocalDate convalida;
 
-	public biglietto(long id, LocalDate dataEmissione, String tratta, String convalida) {
+	public biglietto(long id, LocalDate dataEmissione, String tratta, LocalDate convalida) {
 		
 		this.id = id;
 		this.dataEmissione = dataEmissione;
@@ -65,11 +65,11 @@ public class biglietto {
 		this.tratta = tratta;
 	}
 
-	public String getConvalida() {
+	public LocalDate getConvalida() {
 		return convalida;
 	}
 
-	public void setConvalida(String convalida) {
+	public void setConvalida(LocalDate convalida) {
 		this.convalida = convalida;
 	}
 	

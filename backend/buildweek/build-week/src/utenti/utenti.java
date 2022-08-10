@@ -23,7 +23,9 @@ public class utenti {
 		this.biglietto = biglietto;
 	}
 
-
+	
+	
+	
 	public utenti() {
 		
 	}
