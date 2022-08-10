@@ -1,10 +1,13 @@
 package titoliDiViaggio;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -13,11 +16,13 @@ public class abbonamenti {
 
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
+	@ManyToMany(targetEntity = tessera.class, mappedBy = "codiceAbbonamenti")
 	private long id;
 	@Column(name = "nome")
 	private String nome;
 	@Column(name = "abbonamento")
 	private durata abbonamento;
+
 	
 	
 	

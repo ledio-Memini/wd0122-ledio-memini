@@ -2,17 +2,21 @@ package titoliDiViaggio;
 
 import java.time.LocalDate;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 
 public class tessera {
 	
 	@Id
 	@GeneratedValue (strategy = GenerationType.AUTO)
+
 	private long id;
 	
 	@Column(name = "dataEmissione")
@@ -20,6 +24,11 @@ public class tessera {
 	
 	@Column(name = "dataScadenza")
 	private LocalDate dataScadenza;
+	
+	@ManyToMany(targetEntity = abbonamenti.class, cascade = CascadeType.PERSIST, fetch = FetchType.EAGER)
+	private long codiceAbbonamento;
+	
+	
 
 	
 	
